@@ -10,6 +10,7 @@ git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
 find . -type f \( \
     -name "*.pdf" -o \
     -name "*.png" -o \
+    -name "*.md" -o \
     -name "*.jpg" -o \
     -name "*.tex" -o \
     -name "*.bib" -o \
