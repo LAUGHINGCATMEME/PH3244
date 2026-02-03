@@ -7,7 +7,7 @@ git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
     exit 1
 }
 
-find . -maxdepth 1 -type f \( \
+find . -type f \( \
     -name "*.pdf" -o \
     -name "*.png" -o \
     -name "*.jpg" -o \

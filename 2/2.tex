@@ -1,0 +1,270 @@
+\documentclass[%
+ sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+]{revtex4-2}
+
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+
+\begin{document}
+\title{PH3244\\Experiment - 2\\BJT characteristics \& applications}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we try to see the characteristics of BJT NPN transistor. We also try to construct an oscillator circuit using transistor.
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+\section{Theory and Procedure}
+\subsection{Theory}
+
+
+\subsection{Procedure}
+Testing the side by diode
+
+\subsubsection{Input Characteristics}
+Test the transistor using the DMM as mentioned above  .Connect the transistor in CE mode as per the following circuit-                . current gain                . voltage gain =                             . To test the input characteristics plot input current (IB) versus the input voltage (VBE) for a range  of output voltage VCE  . To test the output characteristics plot the output current (Ic) versus the output voltage (VCE) for  different values of input current IB
+\begin{center}
+\begin{circuitikz}
+\draw (0,0) -- (9,0);
+\draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
+\draw (6,3) node[npn] (Q1) {};
+\draw (Q1.B) -- (4,3);
+\draw (4,3) -- (5,3);
+\draw (Q1.E) -- (6,0);
+\draw (Q1.C) -- (6,4);
+\draw (6,4) -- (7,4)
+to[R,l=$1.2\,\text{k}\Omega$] (9,4)
+      to[battery1,l=$V_{CC}$] (9,0);
+\draw (0,3) to[ammeter,l=A, i_=$I_\text{B}$] (2,3)
+      to[R,l=$20\,\text{k}\Omega$] (4,3);
+      \draw (4,3) to[voltmeter,l=$V_\text{BE}$] (4,0);
+\draw (7,4) to[voltmeter,l=$V_\text{CE}$] (7,0);
+\end{circuitikz}
+\end{center}
+
+
+
+\subsubsection{Output Characteristics}
+.Test the transistor using the DMM as mentioned above  .Connect the transistor in CE mode as per the following circuit-                . current gain                . voltage gain =                             . To test the input characteristics plot input current (IB) versus the input voltage (VBE) for a range  of output voltage VCE  . To test the output characteristics plot the output current (Ic) versus the output voltage (VCE) for  different values of input current IB
+\begin{center}
+\begin{circuitikz}
+\draw (0,0) -- (10,0);
+\draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
+\draw (5,3) node[npn] (Q1) {};
+\draw (Q1.B) -- (4,3);
+\draw (Q1.E) -- (5,0);
+\draw (Q1.C) -- (5,4);
+\draw (10, 4) to[battery1,l=$V_{CC}$] (10, 0);
+\draw (10, 4) to[ammeter, i_=$I_\text{C}$] (8,4); 
+\draw (8,4)to[R,l=$1.2\,\text{k}\Omega$] (6,4);
+\draw (6,4) -- (5,4);
+\draw (0,3) to[ammeter,l=A, i_=$I_\text{B}$] (2,3)
+      to[R,l=$20\,\text{k}\Omega$] (4,3);
+\draw (6,4) to[voltmeter,l=$V_\text{CE}$] (6,0);
+\end{circuitikz}
+\end{center}
+
+
+
+\subsubsection{Phase Shift Oscillator}
+\pagebreak
+
+\section{Observation}
+
+\subsection{Input Characteristics}
+\begin{center}
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $V_\text{CE} =$ 1.00 V}
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV) \\
+\hline
+0 & 3   \\
+0 & 280 \\
+0 & 441 \\
+5 & 632 \\
+10 & 663 \\
+15 & 672 \\
+30 & 675 \\
+50 & 677 \\
+80 & 679 \\
+120 & 683 \\
+200 & 689 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.32\linewidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV)\\
+\hline
+0 & 3   \\
+0 & 198 \\
+0 & 358 \\
+5 & 583 \\
+10 & 634 \\
+15 & 636 \\
+30 & 639 \\
+50 & 644 \\
+80 & 649 \\
+120 & 656 \\
+200 & 667 \\
+\hline
+\end{tabular}
+\captionof{table}{For $V_\text{CE} =$ 4.00 V}
+\end{minipage}
+\hfill
+\hfill
+\begin{minipage}{0.34\linewidth}
+\centering
+\captionof{table}{For $V_\text{CE} =$ 10.00 V}
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV)\\
+\hline
+0 & 3   \\
+0 & 335 \\
+0 & 553 \\
+5 & 636 \\
+10 & 661 \\
+15 & 672 \\
+30 & 696 \\
+50 & 701 \\
+80 & 704 \\
+120 & 706 \\
+200 & 710 \\
+\hline
+\end{tabular}
+\end{minipage}
+\end{center}
+
+
+
+
+\subsection{Output Characteristics}
+\begin{center}
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $I_\text B = 80$ mA}
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.004  & 0.00 \\
+0.057  & 2.05 \\
+0.106  & 7.13 \\
+0.177  & 13.84 \\
+0.327  & 17.01 \\
+0.529  & 18.73 \\
+0.823  & 20.32 \\
+1.191  & 20.95 \\
+1.958  & 21.80 \\
+3.205  & 23.09 \\
+5.660  & 25.96 \\
+9.680  & 29.76 \\
+16.760 & 34.46 \\
+22.650 & 38.19 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\linewidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.005 & 0.00 \\
+0.058 & 1.24 \\
+0.134 & 7.19 \\
+0.208 & 10.25 \\
+0.405 & 11.04 \\
+0.606 & 12.29 \\
+0.844 & 12.38 \\
+1.134 & 12.44 \\
+2.231 & 12.67 \\
+3.262 & 12.94 \\
+4.860 & 13.54 \\
+7.320 & 14.05 \\
+\hline
+\end{tabular}
+\captionof{table}{For $I_\text B = 50$ mA}
+\end{minipage}
+\hfill
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $I_B = 20$ mA}
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.004 & 0.00 \\
+0.012 & 0.02 \\
+0.067 & 0.46 \\
+0.118 & 1.64 \\
+0.243 & 2.88 \\
+0.338 & 2.97 \\
+0.540 & 2.97 \\
+0.798 & 2.97 \\
+1.214 & 2.98 \\
+1.922 & 2.99 \\
+2.829 & 3.01 \\
+4.910 & 3.07 \\
+9.110 & 3.16 \\
+32.530 & 4.59 \\
+\hline
+\end{tabular}
+\end{minipage}
+\end{center}
+
+Comments. about the time takenfor stablity, and heating of transistors:w
+
+Also add why taken in decenting order
+Then add least count of stuff:w
+
+
+In calc add why did error i graph 1 and not in 2, also the range clarification
+\pagebreak
+\section{Calculations and Characteristics}
+\subsection{Input Characteristics}
+\begin{figure}[h]
+    \centering
+  %  \includegraphics[width=0.75\linewidth]{inputchar}
+    \caption{INPUT CHAR}
+    \label{fig:input}
+\end{figure}
+
+
+\subsection{Output Characteristics}
+\begin{figure}[h]
+    \centering
+  %  \includegraphics[width=0.75\linewidth]{outputchar}
+    \caption{OUTPUT CHAR}
+    \label{fig:output}
+\end{figure}
+
+
+\section{Result and Conclusion}
+
+From the graph of input char we can say it works as a normal diode, turinging on at between range of 0.67 volts 
+
+
+\appendix
+
+
+\bibliography{}
+\end{document}
