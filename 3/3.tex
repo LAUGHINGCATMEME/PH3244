@@ -1,0 +1,358 @@
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+
+\begin{document}
+\title{PH3244\\Experiment - 3\\FET characteristics}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we try to see the characterists of Field-effect transistor (FET).
+\\
+Study of the characteristics of JFET (Junction Field Effect Transistor) in  common source configuration and to evaluate: 1. AC drain resistance 2. Transconductance 3. Amplification factor 4. Drain resistance 
+\end{abstract}
+\maketitle
+\section{Theory and Procedure}
+\subsection{Theory}
+\subsubsection{Feild-effect transistor}
+The field-effect transistor (FET) is a type of transistor that relies on an electric  field to control the shape and hence the conductivity of a 'channel' in a  semiconductor material. Field-effect transistors are so named because a weak  electrical signal coming in through one electrode, creates an electrical field  through the rest of the transistor.
+\subsubsection{Composition}
+The FET can be constructed from a number of semiconductors, silicon being  by  far  the most  common.  Most  FETs  are  made with  conventional  bulk  semiconductor processing techniques, using the single crystal semiconductor  wafer as the active region, or channel.\\
+Among  the  more  unusual  body  materials  are  amorphous  silicon,  polycrystalline  silicon  or  other  amorphous  semiconductors  in  thin-film  transistors  or  organic  field  effect  transistors  that  are  based  on  organic  semiconductors and often apply organic gate insulators and electrodes. \\
+“Cleanliness is next to godliness” applies to the manufacture of field effect  transistors. Though it is possible to make bipolar transistors outside of a clean  room,  it  is  a  necessity  for  field  effect  transistors.  Even  in  such  an  environment, manufacture is tricky because of contamination control issues.  The unipolar field effect transistor is conceptually simple, but difficult to  manufacture. Most transistors today are a metal oxide semiconductor variety  of the field effect transistor contained within integrated circuits. However,  discrete JFET devices are available. \\
+\subsubsection{FET operation}
+A field effect transistor (FET) is a unipolar device, conducting as current  using only one kind of charge carrier. If it is based on an N-type slab of  semiconductor, the carriers are electrons. Conversely, a P-type based device  uses only holes. At the circuit level, field effect transistor operation is simple.  A voltage applied to the  gate, input element, controls the resistance of the  channel, the unipolar region between the gate regions. Generally two types of  FET are used: (1) Junction field effect transistor (JFET), (2) Metal oxide  semiconductor field effect transistor (MOSFET). 
+\subsubsection{Construction of JFET}
+The junction field effect transistor (JFET) is constructed in the following two  ways:
+\begin{enumerate}
+	\item N channel JFET
+	\item P channel JFET
+\end{enumerate}
+\subsubsection{N channel JFET}
+It consists of a thin bar of N type semiconductor with two junctions with the P  type semiconductor near the center, at opposite sides of the bar. Thus we get  two P-N junctions on either side of the bar. Both the P type semiconductors  are internally connected together (i.e., both have the common one terminal).  This terminal is called the gate and is represented by the letter G. When this  terminal is given a potential, the P type semiconductor of both the junctions  are at same potential. \\
+The region between the two junctions is called the channel. The terminals  from the either ends of the N type semiconductor are called the source and  drain which are represented by the letters S and D respectively in Figure 2.  When a potential difference is applied between the drain D and the source S,  the majority charge carriers of N channel (i.e., electrons) move in accordance  with the applied potential. As a result, current flows through the channel.\\
+\subsubsection{P channel JFET}
+It consists of a thin bar of P type semiconductor with two junctions with the N  type semiconductor near the center, at opposite sides of the bar. Thus we get  two P-N junctions on either side of the bar. Both the N type semiconductors  are internally connected together (i.e., both have the common one terminal) as  shown in Figure 4. The common terminal is called the gate G. The terminals  extending out of two ends of the P semiconductor are called th source S and  drain D. When a potential difference is applied between the drain D and the  source S, the majority charge carriers of P channel (i.e., holes) move in  accordance with the applied potential. As a result, the current flows through  the channel.
+\subsubsection{Operation of JFET}
+A properly biased N-channel junction field effect transistor (JFET) is shown  in Figure 5 above. The gate constitutes a diode junction to the source to drain  semiconductor slab. The gate is reverse biased. If a voltage (or an ohmmeter)  were applied between the source and drain, the N-type bar would conduct in  either direction because of the doping. Neither gate nor gate bias is required  for conduction. If a gate junction is formed as shown, conduction can be  controlled by the degree of reverse bias.\\Figure below 6(a) shows the depletion region at the gate junction. This is due  to diffusion of holes from the P-type gate region into the N-type channel,  giving  the  charge  separation  about  the  junction,  with  a  non-conductive  depletion region at the junction. The depletion region extends more deeply  into the channel side due to the heavy gate doping and light channel doping. \\
+The thickness of the depletion region can be increased Figure above 6(b) by  applying moderate reverse bias. This increases the resistance of the source to  drain channel by narrowing the channel. Increasing the reverse bias at 6(c)  increases the depletion region, decreases the channel width and increases the  channel resistance. Increasing the reverse bias VGS at 6(d) will pinch-off the  channel current. The channel resistance will be very high. This VGS at which  pinch-off occurs is VP, the pinch-off voltage. It is typically a few volts. In  summation, the channel resistance can be controlled by the degree of reverse  biasing on the gate. \\
+The source and drain are interchangeable, and the source to drain current may  flow in either direction for low level drain battery voltage (<0.6 V). That is,  the drain battery may be replaced by a low voltage AC source. For a high  drain power supply voltage, to 10's of volts for small signal devices, the  polarity must be as indicated in Figure below 7(a). This drain power supply,  distorts the depletion region, enlarging it on the drain side of the gate. This is  a more correct representation for common DC drain supply voltages, from a  few to tens of volts. As drain voltage VDS is increased, the gate depletion  region expands toward the drain. This increases the length of the narrow  channel, increasing its resistance a little. We say "a little" because large  resistance changes are due to changing gate bias. Figure below 7(b) shows the  schematic symbol for an N-channel field effect transistor compared to the  silicon cross-section at 7(a). The gate arrow points in the same direction as a  junction diode. The “pointing” arrow and “non-pointing” bar correspond to P  and N-type semiconductors, respectively. \\
+Figure  7(a)  above shows  a  large  electron  current  flow  from  (-)  battery  terminal, to FET source, out the drain, returning to the (+) battery terminal.  This current flow may be controlled by varying the gate voltage. A load in  series with the battery is an amplified version of the changing gate voltage. \\
+P-channel field effect transistors are also available. The channel is made of Ptype material. The gate is a heavy N-type region. All the voltage sources are  reversed in the P-channel circuit (Figure 8(a)  below) as compared with the  more popular N-channel device. Also note the arrow points out of the gate of  the schematic symbol Figure 8(b) of the P-channel field effect transistor. \\
+
+
+
+
+\subsection{Procedure}
+Procedure : 1. Connect 2mm patch cord to -5V and +12V DC power supplies from  inbuilt supplies and also connect ground of supplies to common ground. 2. Connect test point 2 of resistance R1 to the potentiometer P1 at test point  1 and another terminal of resistance R1of test point 3 to gate terminal at  test point 4. 3. Connect drain terminal of test point 5 to test point 6. 4. Connect test point 8 of resistance R2 to test point 9 of potentiometer P2. 5. To plot drain characteristics proceed as follows :
+6. Rotate both potentiometers P1 and P2 fully in CCW (counter clock wise)  direction. 7. Connect inbuilt DC ammeter between test point 6 and 7, to measure output  drain current ID (mA). 8. Connect positive terminal of inbuilt DC voltmeter to test point 3 and  negative terminal to Gnd, to set the value of input voltage VG S. 9. Switch “on” the power supply. 10. Rotate potentiometer P1 and set the value of input gate to source voltage  at some constant value (0V, -1V, -2V, -3V……….). 11. Now disconnect DC voltmeter to test point 3 and Gnd and connect  inbuilt DC voltmeter to test point 5 and Gnd to measure output voltage  VDS. 12. Vary the potentiometer P2 so as to increase the value of output drain to  source  voltage  VDS from  zero  to  10V  in  step  and  measure  the  corresponding values of output drain current ID  for different constant  values of input gate to source voltage VGS. 13. Rotate potentiometer P2 fully in CCW direction. 14. Repeat the procedure from step 4 for different sets of input voltage VGS. 15. Plot a curve between output voltage VDS and output current ID at different  constant values of input gate to source voltage as shown in Figure 14.  Using suitable scale with the help of observation table 1. This curve is  the required output/drain characteristic. 
+
+\subsubsection{Transfer Characteristics}
+To test the transfer characteristics of the transistor: 
+\begin{enumerate}
+	\item 1. Switch “off” the power supply. 2. Rotate both potentiometers P1 and P2 fully in CCW (counter clock wise)  direction. 3. Connect  DC ammeter between  test point 6 and  7 as their indicated  position to measure output drain current ID (mA). 4. Connect positive terminal of inbuilt DC voltmeter to test point 5 and  negative terminal to Gnd, to set the value of output voltage VDS. 5. Switch “on” the power supply. 6. Vary potentiometer P2 and set a value of output voltage VD 7. Now disconnect DC voltmeter to test point 5 and Gnd. 8. Connect inbuilt DC voltmeter to test point 3 and Gnd to measure input  voltage VGS. 9. Vary the potentiometer P1 so as to increase the value of input voltage VGS  from zero to maximum value in step and measure the corresponding  values of output current ID in an observation table 2. 10. Rotate potentiometer P1 in CCW direction. 11. Now disconnect DC voltmeter to test point 3 and Gnd and again connect  to test point 5 and Gnd for output drain to source voltage VDS  and set at  constant value. 12. Repeat the procedure from step 6 for different sets of output voltage VDS. 13. Plot a curve between input voltage VGS and output current ID at different  constant values of output drain to source voltage as shown in Figure 16.  Using suitable scale with the help of observation table 2. This curve is the  required transfer characteristic. 
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+\begin{circuitikz}
+\draw (0,0) -- (9,0);
+\draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
+\draw (6,3) node[npn] (Q1) {};
+\draw (Q1.B) -- (4,3);
+\draw (4,3) -- (5,3);
+\draw (Q1.E) -- (6,0);
+\draw (Q1.C) -- (6,4);
+\draw (6,4) -- (7,4)
+to[R,l=$1.2\,\text{k}\Omega$] (9,4)
+      to[battery1,l=$V_{CC}$] (9,0);
+\draw (0,3) to[ammeter,l=A, i_=$I_\text{B}$] (2,3)
+      to[R,l=$20\,\text{k}\Omega$] (4,3);
+      \draw (4,3) to[voltmeter,l=$V_\text{BE}$] (4,0);
+\draw (7,4) to[voltmeter,l=$V_\text{CE}$] (7,0);
+\end{circuitikz}
+
+\caption{Input Characterists}
+\label{fig:input_char}
+\end{figure}
+
+
+
+
+\subsubsection{Output Characteristics}
+To test the output characteristics of the transistor: 
+\begin{enumerate}
+	\item Connect the components as shown in FIG - 2. 
+	\item Fix a value of $I_\text{B}$.	
+	\item Take measurements of $I_\text C$ and $V_{\text{CE}}$
+	\item Plot $I_\text C$ and $V_{\text{CE}}$ to get characteristics.
+\end{enumerate}
+\begin{figure}[h!]
+	\centering
+\begin{circuitikz}
+\draw (0,0) -- (10,0);
+\draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
+\draw (5,3) node[npn] (Q1) {};
+\draw (Q1.B) -- (4,3);
+\draw (Q1.E) -- (5,0);
+\draw (Q1.C) -- (5,4);
+\draw (10, 4) to[battery1,l=$V_{CC}$] (10, 0);
+\draw (10, 4) to[ammeter, i_=$I_\text{C}$] (8,4); 
+\draw (8,4)to[R,l=$1.2\,\text{k}\Omega$] (6,4);
+\draw (6,4) -- (5,4);
+\draw (0,3) to[ammeter,l=A, i_=$I_\text{B}$] (2,3)
+      to[R,l=$20\,\text{k}\Omega$] (4,3);
+\draw (6,4) to[voltmeter,l=$V_\text{CE}$] (6,0);
+\end{circuitikz}
+\caption{Output Characterists}
+\label{fig:output_char}
+\end{figure}
+
+\subsubsection{Phase Shift Ossiclator and Amplifier}
+\begin{figure}[h!]
+	\centering
+\begin{circuitikz}
+
+\end{circuitikz}
+\caption{Phase Shift Oscillator}
+\label{fig:pso}
+\end{figure}
+
+
+
+\section{Observation}
+
+\subsection{Input Characteristics}
+\begin{center}
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $V_\text{CE} =$ 1.00 V}
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV) \\
+\hline
+0 & 3   \\
+0 & 280 \\
+0 & 441 \\
+5 & 632 \\
+10 & 663 \\
+15 & 672 \\
+30 & 675 \\
+50 & 677 \\
+80 & 679 \\
+120 & 683 \\
+200 & 689 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.32\linewidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV)\\
+\hline
+0 & 3   \\
+0 & 198 \\
+0 & 358 \\
+5 & 583 \\
+10 & 634 \\
+15 & 636 \\
+30 & 639 \\
+50 & 644 \\
+80 & 649 \\
+120 & 656 \\
+200 & 667 \\
+\hline
+\end{tabular}
+\captionof{table}{For $V_\text{CE} =$ 4.00 V}
+\end{minipage}
+\hfill
+\hfill
+\begin{minipage}{0.34\linewidth}
+\centering
+\captionof{table}{For $V_\text{CE} =$ 10.00 V}
+\begin{tabular}{|c|c|}
+\hline
+$I_B$ (µA) & $V_{BE}$ (mV)\\
+\hline
+0 & 3   \\
+0 & 335 \\
+0 & 553 \\
+5 & 636 \\
+10 & 661 \\
+15 & 672 \\
+30 & 696 \\
+50 & 701 \\
+80 & 704 \\
+120 & 706 \\
+200 & 710 \\
+\hline
+\end{tabular}
+\end{minipage}
+\end{center}
+\begin{center}
+Data taken on: 28th Jan 2025 with Aryan (202310??)
+\end{center}
+\begin{enumerate}
+	\item least count of Ammeter: 5 $\mu$A
+	\item least count of Voltmeter ($V_\text{CE}$): 0.01 V
+	\item least count of Voltmeter ($V_\text{BE}$): 1 mV
+\end{enumerate}
+
+
+
+\subsection{Output Characteristics}
+\begin{center}
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $I_\text B = 80$ mA}
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.004  & 0.00 \\
+0.057  & 2.05 \\
+0.106  & 7.13 \\
+0.177  & 13.84 \\
+0.327  & 17.01 \\
+0.529  & 18.73 \\
+0.823  & 20.32 \\
+1.191  & 20.95 \\
+1.958  & 21.80 \\
+3.205  & 23.09 \\
+5.66  & 25.96 \\
+9.68 & 29.76 \\
+16.76 & 34.46 \\
+22.65 & 38.19 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}{0.3\linewidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.005 & 0.00 \\
+0.058 & 1.24 \\
+0.134 & 7.19 \\
+0.208 & 10.25 \\
+0.405 & 11.04 \\
+0.606 & 12.29 \\
+0.844 & 12.38 \\
+1.134 & 12.44 \\
+2.231 & 12.67 \\
+3.262 & 12.94 \\
+4.86 & 13.54 \\
+7.32 & 14.05 \\
+\hline
+\end{tabular}
+\captionof{table}{For $I_\text B = 50$ mA}
+\end{minipage}
+\hfill
+\begin{minipage}{0.31\linewidth}
+\centering
+\captionof{table}{For $I_B = 20$ mA}
+\begin{tabular}{|c|c|}
+\hline
+$V_\text{CE}$ (V) & $I_C$ (mA) \\
+\hline
+0.004 & 0.00 \\
+0.012 & 0.02 \\
+0.067 & 0.46 \\
+0.118 & 1.64 \\
+0.243 & 2.88 \\
+0.338 & 2.97 \\
+0.540 & 2.97 \\
+0.798 & 2.97 \\
+1.214 & 2.98 \\
+1.922 & 2.99 \\
+2.829 & 3.01 \\
+4.91 & 3.07 \\
+9.11 & 3.16 \\
+32.53 & 4.59 \\
+\hline
+\end{tabular}
+\end{minipage}
+\end{center}
+\begin{center}
+Data taken on: 28th Jan 2025 with Aryan (202310??)
+\end{center}
+\begin{enumerate}
+	\item least count of Ammeter ($I_\text C$): 10 $\mu$A
+	\item least count of Ammeter ($I_\text B$): 5 $\mu$A
+	\item least count of Voltmeter ($V_\text{CE}$): 1-10 mV depending on value.
+\end{enumerate}
+\subsection{Phase Shift Ossiclator and Amplifier}
+\subsection{Comments}
+During the measurement of output characteristics, when $I_\text B$ is above 20 mA, the values of $V_\text{CE}$ and $I_\text C$ decrease and increasre over time. Most values are taken immiditely after adjusting $V_\text{CE}$.
+
+
+\pagebreak
+\section{Calculations and Characteristics}
+\subsection{Error Propogation}
+To calculate the variance from least count, we use the formula: 
+$$\sigma = \frac{\text{Least Count}}{\sqrt{12}}$$
+from this we see that the variance is insignificant and hence while plotting graph isn't labeled.\\
+The error due to heating is not taken into consideration. \\
+
+
+\subsection{Input Characteristics}
+From Table - 1,2,3 we plot them for input characteristics. The error in data points is not taken into consideration due to least count as it is insignificant.
+\begin{figure}[H]
+    \centering
+% \includegraphics[width=0.75\linewidth]{inputchar}
+    \caption{Input characterists}
+    \label{fig:input}
+\end{figure}
+
+
+\subsection{Output Characteristics}
+From Table - 4,5,6 we plot them for output characteristics. Here again the error in data points is not taken into consideration due to least count as it is insignificant. We plot the graph till only 10 V for $V_\text{CE}$ as the characteristics after that is the same.
+\begin{figure}[H]
+    \centering
+% \includegraphics[width=0.75\linewidth]{outputchar}
+    \caption{Output Characterists}
+    \label{fig:output}
+\end{figure}
+\subsection{Phase Shift Ossiclator and Amplifier}
+
+\section{Result and Conclusion}
+
+From the graph of input char we can say it works as a normal diode, turinging on at between range of 0.67 volts 
+\vspace{1cm}
+\hrule
+\nocite{*}
+\bibliographystyle{apsrev4-2}
+\bibliography{2}
+\hfill
+
+\end{document}

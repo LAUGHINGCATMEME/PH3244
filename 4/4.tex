@@ -1,0 +1,191 @@
+\documentclass[%
+sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+]{revtex4-2}
+
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+
+\begin{document}
+\title{PH3244\\Experiment - 4\\e/m}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we try to measure the electron weight by mass ratio (value of e/m).
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+\section{Theory and Procedure}
+\subsection{Theory}
+
+Our arrangement for measuring e/m, the charge to mass ratio of the electron, is a very simple set-up. It is based on Thomson's method. The e/m-tube is bulb-like and contains a filament, a cathode, a grid, a pair of deflection plates and an anode. The filament heats the cathode which emits electrons. The electrons are accelerated through a known potential applied between the cathode and the anode. The grid and the anode have a hole through which electrons can pass. The tube is filled with helium at a very low pressure. Some of the electrons emitted by the cathode collide with helium atoms which get excited and radiate visible light. The electron beam thus leaves a visible track in the tube and all manipulations on it can be seen. The tube is placed between a pair of fixed Helmholtz coils which produce a uniform and known magnetic field. The socket of the tube can be rotated so that the electron beam is at right angles to the magnetic field. The beam is deflected in a circular path of radius $r$ depending on the accelerating potential $V$, the magnetic field $B$ and the charge to mass ratio e/m. This circular path is visible and the diameter $d$ can be measured and e/m obtained from the relation
+
+\[
+e/m = 8V / B^2 d^2.
+\]
+
+This set-up can also be used to study the electron beam deflection for different directions of the magnetic field by varying the orientation of the e/m-tube.
+
+The deflecting plates play no role in the experiment. They are interesting for a visual observation of how the electron beam gets deflected when a potential difference is applied between the deflecting plates.
+
+\begin{center}
+%\includegraphics[width=0.55\textwidth]{img-0.jpeg} \\
+Fig. 1: e/m Experiment, EMX-01
+\end{center}
+
+\subsection{Relation between $V$, $B$ and $r$}
+
+When the electrons are accelerated through the potential $V$, they gain kinetic energy equal to their charge times the accelerating potential. Therefore $eV = m v^{2} / 2$. The final (non-relativistic) velocity of the electrons is therefore
+
+\begin{equation}
+v = \left(2 e V / m\right) ^ {1 / 2}
+\tag{1}
+\end{equation}
+
+When these electrons pass through a region having a magnetic field $B$, they are acted upon by a force, called the Lorentz force, given by $e\vec{v} \times \vec{B}$. If the electrons are initially moving along $x$-axis and the magnetic field is along $z$-axis, the electrons describe a circular path in the $xy$-plane with the centripetal force balancing the Lorentz force,
+
+\[
+e v B = m v ^ {2} / r
+\]
+\[
+\text {or} \quad v = e B r / m \tag {2}
+\]
+
+Eliminating $v$ between Eqs.(1) and (2), we get
+
+\[
+e B r / m = \left(2 e V / m\right) ^ {1 / 2}
+\]
+\[
+\text {or} \quad e / m = 2 V / B ^ {2} r ^ {2} = 8 V / B ^ {2} d ^ {2} \tag {3}
+\]
+
+where $d$ is diameter of the circular path. This result assumes that the magnetic field $B$ is uniform. This in the apparatus is produced by a pair of Helmholtz coils (separated by a distance equal to their radius). If $n$ is number of turns in a coil and $a$ its radius, then the magnetic field $B$, midway between the coils is given by
+
+$$B = 2 \times \frac{\mu_0 I n }{2(5/4)^{3/2}a} = 2 \times \left( \frac{2\pi I n}{(5/4)^{3/2}a} \times 10^{-7} \right)$$
+
+when a current of $I$ amp is flowing in the coils. $\mu_0$ is permeability of free space and is given by $\mu_0 = 4\pi \times 10^{-7} \, \mathrm{N / A^2}$. This field is uniform in the region where the electrons move. Putting the value of $B$ in Eq.(3), we get
+
+\begin{equation}
+\frac {e}{m} = \left(\frac {1 2 5 a ^ {2}}{1 2 8 \pi^ {2} n ^ {2}} \times 1 0 ^ {1 4}\right) \frac {V}{I ^ {2} d ^ {2}}
+\tag{4}
+\end{equation}
+
+The coils in thsi apparatus have 160 turns each and their radii are 0.14 m. using this values 
+
+\begin{equation}
+	\boxed{	\frac e m = (7.576 \times  10^6) \frac {V (\si{\volt})} {I^2 (\si{\ampere}^2) d^2 (\si{\meter}^2)} \si{\coulomb \per \kilogram}}
+\tag{5}
+\end{equation}
+
+
+
+\subsection{Procedure}
+
+\begin{enumerate}
+\item Before the power is switched to ‘ON’, make sure all the control knobs are at their minimum position.
+
+\item Turn the power switch to ‘ON’. The indicator lamp will glow.
+
+\item Wait a little for the cathode to heat up.
+
+\item Turn the accelerator voltage adjust knob clockwise to increase the voltage. Rectilinear electron beam emerging from the cathode will be visible. Adjust the accelerator voltage at about 200 volt.
+
+\item It should be clear that the electrons themselves in the beam are not visible. What is observed is the glow of the helium gas in the tube when the electrons collide with the atoms of the gas. We actually see the glow of gas atoms which have been excited by collisions with electrons.
+
+\item Rotate the e/m - tube so that the electron beam is parallel to the plane of the Helmholtz coils. \textit{Do not take it out of its socket.}
+
+\item Earth's magnetic field interferes with the measurements. However this magnetic field is weak compared to the field generated by the Helmholtz coils and we could ignore its effect as a first approximation.
+
+\item Slowly turn the current adjust knob clockwise to increase the current for the Helmholtz coils. The electron beam will get curved. Increasing the current will increase the curvature of the beam.
+
+\item In case the electron beam does not make a complete (closed) circle and the circular path is skewed, rotate the socket of the tube until the path is a closed circle. This happens when the tube pointer is set at about 90$^\circ$.
+
+\item Measure the diameter of the electron beam. This measurement has been facilitated by fixing a hollow tube (fitted with cross wires at its both ends) on the slider of the scale. This tube fixes the line of sight during measurements.
+
+\item Note the ammeter reading for the current to the Helmholtz coils and the voltmeter reading for the accelerating voltage.
+
+\item Decrease the accelerating voltage by a small amount (20 volt, say) and measure the diameter of the electron beam path.
+
+\item Carry on the observations. The voltmeter reading should not be increased beyond 250 volt. A value lower than 80 volt is also not advisable. Similarly the current to the Helmholtz coils should not be more than 2 amp.
+
+\item \textit{Do not leave the beam ON for long periods of time.}
+\end{enumerate}
+
+
+\section{Observations}
+
+\begin{center}
+\centering
+\captionof{table}{For $V_\text{CE} =$ 1.00 V}
+\begin{tabular}{|c|c|c|}
+\hline
+Acc. Vol. (V) & Right-end (cm) & Left-end (cm) \\
+\hline
+1 & 1& 1\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+	\item class index: 2.5
+	\item least count of current: 0.1 A 
+	\item least count of voltage: 10 V
+	\item least count of scale: 0.1 mm 
+	\item total coil turns: 160
+	\item coil radii: 0.14 m
+\end{enumerate}
+
+\subsection{Comments}
+During the measurement of output characteristics, when $I_\text B$ is above 20 mA, the values of $V_\text{CE}$ and $I_\text C$ decrease and increasre over time. Most values are taken immiditely after adjusting $V_\text{CE}$.
+
+
+\section{Calculations and Characteristics}
+\subsection{Error Propogation}
+To calculate the variance from least count, we use the formula: 
+$$\sigma = \frac{\text{Least Count}}{\sqrt{12}}$$
+from this we see that the variance is insignificant and hence while plotting graph isn't labeled.\\
+The error due to heating is not taken into consideration. \\
+
+
+\subsection{Input Characteristics}
+From Table - 1,2,3 we plot them for input characteristics. The error in data points is not taken into consideration due to least count as it is insignificant.
+\begin{figure}[H]
+    \centering
+% \includegraphics[width=0.75\linewidth]{inputchar}
+    \caption{Input characterists}
+    \label{fig:input}
+\end{figure}
+
+
+\subsection{Output Characteristics}
+From Table - 4,5,6 we plot them for output characteristics. Here again the error in data points is not taken into consideration due to least count as it is insignificant. We plot the graph till only 10 V for $V_\text{CE}$ as the characteristics after that is the same.
+\begin{figure}[H]
+    \centering
+% \includegraphics[width=0.75\linewidth]{outputchar}
+    \caption{Output Characterists}
+    \label{fig:output}
+\end{figure}
+
+\section{Result and Conclusion}
+From teh graph of Input characteristics, we can say that the transistor gets turned on in teh range of $\approx$0.6-0.7 V. Furthermore the higher the voltage across Collector-Emmiter, the greater the Base-Emmiter voltage is required. \\
+
+For the Output characteristics we see that for a fixed base voltage, the Collecter-Current gets multiplied by some amount which saturates after some voltage, although we see for 80mA base current the current keeps on increaseing linearly after some Collector-Emmiter Voltage.
+\vspace{1cm}
+\hrule
+\nocite{*}
+\bibliographystyle{apsrev4-2}
+\bibliography{2}
+
+\end{document}

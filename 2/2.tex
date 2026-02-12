@@ -1,11 +1,12 @@
 \documentclass[%
- sor,
+sor,
  jor,
  amsmath,amssymb,
  reprint,
 ]{revtex4-2}
 
 \usepackage{booktabs}
+\usepackage{float}
 \usepackage{caption}
 \usepackage{amsmath, amssymb, amsfonts}
 \usepackage{siunitx}
@@ -19,7 +20,7 @@
 \date{\today}
 \begin{abstract}
 \centering
-In this experiment we try to see the characteristics of BJT NPN transistor. We also try to construct an oscillator circuit using transistor.
+In this experiment we try to see the characteristics of BJT-npn transistor. 
 \end{abstract}
 \maketitle
 \tableofcontents
@@ -27,14 +28,21 @@ In this experiment we try to see the characteristics of BJT NPN transistor. We a
 \pagebreak
 \section{Theory and Procedure}
 \subsection{Theory}
-
-
+BJT is a 3 layer semiconductor device consisting of 2 n and 1 p type layers (npn BJT with, 2  junctions n-p, p-n  ) or 2 p and 1 n type (pnp BJT  with 2 junctions p-n, n-p) layers.\\
+Here we try to see the characteristics of the transistor in forward bias, the procedure is explained in the next section.
 \subsection{Procedure}
-Testing the side by diode
+To get the Collector-Base-Emmitor of the transistor, we connect the middle pin of transistor and measure the resistance to the other two ends. If it is an NPN transistor then the pin with significantly less resistance compared to other will be emmitor.
 
 \subsubsection{Input Characteristics}
-Test the transistor using the DMM as mentioned above  .Connect the transistor in CE mode as per the following circuit-                . current gain                . voltage gain =                             . To test the input characteristics plot input current (IB) versus the input voltage (VBE) for a range  of output voltage VCE  . To test the output characteristics plot the output current (Ic) versus the output voltage (VCE) for  different values of input current IB
-\begin{center}
+To test the input characteristics of the transistor: 
+\begin{enumerate}
+	\item Connect the components as shown in FIG - 1. 
+	\item Measure a inital value of $V_\text{CE}$.	
+	\item Take measurements of $I_\text B$ and $V_{\text{BE}}$
+	\item Plot $I_\text B$ and $V_{\text{BE}}$ to get characteristics.
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
 \begin{circuitikz}
 \draw (0,0) -- (9,0);
 \draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
@@ -51,13 +59,24 @@ to[R,l=$1.2\,\text{k}\Omega$] (9,4)
       \draw (4,3) to[voltmeter,l=$V_\text{BE}$] (4,0);
 \draw (7,4) to[voltmeter,l=$V_\text{CE}$] (7,0);
 \end{circuitikz}
-\end{center}
+
+\caption{Input Characterists}
+\label{fig:input_char}
+\end{figure}
+
 
 
 
 \subsubsection{Output Characteristics}
-.Test the transistor using the DMM as mentioned above  .Connect the transistor in CE mode as per the following circuit-                . current gain                . voltage gain =                             . To test the input characteristics plot input current (IB) versus the input voltage (VBE) for a range  of output voltage VCE  . To test the output characteristics plot the output current (Ic) versus the output voltage (VCE) for  different values of input current IB
-\begin{center}
+To test the output characteristics of the transistor: 
+\begin{enumerate}
+	\item Connect the components as shown in FIG - 2. 
+	\item Fix a value of $I_\text{B}$.	
+	\item Take measurements of $I_\text C$ and $V_{\text{CE}}$
+	\item Plot $I_\text C$ and $V_{\text{CE}}$ to get characteristics.
+\end{enumerate}
+\begin{figure}[h!]
+	\centering
 \begin{circuitikz}
 \draw (0,0) -- (10,0);
 \draw (0,3) to[battery1,l=$V_{BB}$] (0,0);
@@ -73,12 +92,18 @@ to[R,l=$1.2\,\text{k}\Omega$] (9,4)
       to[R,l=$20\,\text{k}\Omega$] (4,3);
 \draw (6,4) to[voltmeter,l=$V_\text{CE}$] (6,0);
 \end{circuitikz}
-\end{center}
+\caption{Output Characterists}
+\label{fig:output_char}
+\end{figure}
 
-
-
-\subsubsection{Phase Shift Oscillator}
-\pagebreak
+\subsubsection{Phase Shift Ossiclator and Amplifier}
+Phase shift ossilator is constructed as shown in FIG - 3 where the $C$ and $R$ values are determined using [1].
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.87\linewidth]{pso}
+\caption{Phase Shift Oscillator}
+\label{fig:pso}
+\end{figure}
 
 \section{Observation}
 
@@ -101,16 +126,14 @@ $I_B$ (µA) & $V_{BE}$ (mV) \\
 50 & 677 \\
 80 & 679 \\
 120 & 683 \\
-200 & 689 \\
 \hline
 \end{tabular}
 \end{minipage}
-\hfill
 \begin{minipage}{0.32\linewidth}
-\centering
+	\centering
 \begin{tabular}{|c|c|}
 \hline
-$I_B$ (µA) & $V_{BE}$ (mV)\\
+$I_B$ (µA) & $V_{BE}$ (mV) \\
 \hline
 0 & 3   \\
 0 & 198 \\
@@ -127,7 +150,6 @@ $I_B$ (µA) & $V_{BE}$ (mV)\\
 \end{tabular}
 \captionof{table}{For $V_\text{CE} =$ 4.00 V}
 \end{minipage}
-\hfill
 \hfill
 \begin{minipage}{0.34\linewidth}
 \centering
@@ -151,15 +173,29 @@ $I_B$ (µA) & $V_{BE}$ (mV)\\
 \end{tabular}
 \end{minipage}
 \end{center}
+\begin{center}
+Data taken on: 28th Jan 2025 
+\end{center}
 
-
-
+\begin{enumerate}
+	\item least count of Ammeter: 5 $\mu$A
+	\item least count of Voltmeter ($V_\text{CE}$): 0.01 V
+	\item least count of Voltmeter ($V_\text{BE}$): 1 mV
+\end{enumerate}
 
 \subsection{Output Characteristics}
+
+\begin{enumerate}
+	\item least count of Ammeter ($I_\text C$): 10 $\mu$A
+	\item least count of Ammeter ($I_\text B$): 5 $\mu$A
+	\item least count of Voltmeter ($V_\text{CE}$): 1-10 mV depending on value.
+\end{enumerate}
+
+
 \begin{center}
 \begin{minipage}{0.31\linewidth}
 \centering
-\captionof{table}{For $I_\text B = 80$ mA}
+\captionof{table}{For $I_\text B = 80$ $\mu$A}
 \begin{tabular}{|c|c|}
 \hline
 $V_\text{CE}$ (V) & $I_C$ (mA) \\
@@ -174,10 +210,10 @@ $V_\text{CE}$ (V) & $I_C$ (mA) \\
 1.191  & 20.95 \\
 1.958  & 21.80 \\
 3.205  & 23.09 \\
-5.660  & 25.96 \\
-9.680  & 29.76 \\
-16.760 & 34.46 \\
-22.650 & 38.19 \\
+5.66  & 25.96 \\
+9.68 & 29.76 \\
+16.76 & 34.46 \\
+22.65 & 38.19 \\
 \hline
 \end{tabular}
 \end{minipage}
@@ -198,16 +234,16 @@ $V_\text{CE}$ (V) & $I_C$ (mA) \\
 1.134 & 12.44 \\
 2.231 & 12.67 \\
 3.262 & 12.94 \\
-4.860 & 13.54 \\
-7.320 & 14.05 \\
+4.86 & 13.54 \\
+7.32 & 14.05 \\
 \hline
 \end{tabular}
-\captionof{table}{For $I_\text B = 50$ mA}
+\captionof{table}{For $I_\text B = 50$ $\mu$A}
 \end{minipage}
 \hfill
 \begin{minipage}{0.31\linewidth}
 \centering
-\captionof{table}{For $I_B = 20$ mA}
+\captionof{table}{For $I_B = 20$ $\mu$A}
 \begin{tabular}{|c|c|}
 \hline
 $V_\text{CE}$ (V) & $I_C$ (mA) \\
@@ -223,48 +259,68 @@ $V_\text{CE}$ (V) & $I_C$ (mA) \\
 1.214 & 2.98 \\
 1.922 & 2.99 \\
 2.829 & 3.01 \\
-4.910 & 3.07 \\
-9.110 & 3.16 \\
-32.530 & 4.59 \\
+4.91 & 3.07 \\
+9.11 & 3.16 \\
+32.53 & 4.59 \\
 \hline
 \end{tabular}
 \end{minipage}
 \end{center}
+\begin{center}
+Data taken on: 28th Jan 2025 
+\end{center}
+\subsection{Comments}
+During the measurement of output characteristics, when $I_\text B$ is above 20 mA, the values of $V_\text{CE}$ and $I_\text C$ decrease and increasre over time. Most values are taken immiditely after adjusting $V_\text{CE}$.
 
-Comments. about the time takenfor stablity, and heating of transistors:w
 
-Also add why taken in decenting order
-Then add least count of stuff:w
-
-
-In calc add why did error i graph 1 and not in 2, also the range clarification
-\pagebreak
 \section{Calculations and Characteristics}
+\subsection{Sources of Error}
+\subsubsection{Systematic Errors}
+\begin{enumerate}
+	\item Heating of transistor.
+	\item Restance of wires, breadboard and other parts.
+\end{enumerate}
+
+\subsubsection{Random Errors}
+\begin{enumerate}
+	\item Uncertanity of values of resistance.
+	\item Uncertanity from least count.
+\end{enumerate}
+\subsection{Error Propogation}
+To calculate the standard deviation from least count, we use the formula [2]: 
+$$\sigma = \frac{\text{Least Count}}{\sqrt{12}}$$
+from this we see that the variance is insignificant and hence while plotting graph isn't labeled with error bars, also the error due to heating and other errors are not taken into consideration and are assumed insignificant.
 \subsection{Input Characteristics}
+From Table - 1,2,3 we plot them for input characteristics. The error in data points is not taken into consideration due to least count as it is insignificant.
 \begin{figure}[h]
     \centering
-  %  \includegraphics[width=0.75\linewidth]{inputchar}
-    \caption{INPUT CHAR}
-    \label{fig:input}
+\includegraphics[width=0.75\linewidth]{inputchar}
+    \caption{Input characterists}
 \end{figure}
-
-
 \subsection{Output Characteristics}
+From Table - 4,5,6 we plot them for output characteristics. Here again the error in data points is not taken into consideration due to least count as it is insignificant. We plot the graph till only 10 V for $V_\text{CE}$ as the characteristics after that is the same.
 \begin{figure}[h]
     \centering
-  %  \includegraphics[width=0.75\linewidth]{outputchar}
-    \caption{OUTPUT CHAR}
+ \includegraphics[width=0.75\linewidth]{outputchar}
+    \caption{Output Characterists}
     \label{fig:output}
 \end{figure}
 
-
 \section{Result and Conclusion}
+From the graph of input characteristics we can say that the transistor turns on in the range of 0.6 V - 0.7 V, the graph looks exponential and the greater the $V_{CE}$ the more the $V_{BE}$ is required to turn it on.\\
 
-From the graph of input char we can say it works as a normal diode, turinging on at between range of 0.67 volts 
+From the graph of output characteristics, we can see that after a certain voltage is reached the transistor characteristics beyond that point becomes linear and up unitl that point it increases very rapidly.
 
-
+\vspace{1cm}
+\hrule
+\nocite{*}
+\bibliographystyle{apsrev4-2}
+\bibliography{2}
+[2] \url{https://www.ilsi-india.org/International_Workshop_and_Training_Program_on_Good_Food_Laboratory_Practices/Measurement%20Uncertainty%20by%20Dr.%20G%20M%20Tewari,%20NABL%20Assessor.pdf}
+	\vspace{2cm}
 \appendix
 
+\section{Comments on Phase Shift Ossilator}
+The Osiciloscope required to measure the frequency of phase shift ossilator was deemed faulty, hence no measurements/images of it is taken.
 
-\bibliography{}
 \end{document}

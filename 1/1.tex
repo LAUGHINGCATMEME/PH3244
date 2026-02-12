@@ -1,0 +1,285 @@
+\documentclass[%
+ sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+]{revtex4-2}
+
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+
+
+\begin{document}
+\title{PH3244\\Experiment - 1\\Measurement of Suseptiblity of a liquid or a solution by Quincke's method}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we try to measure the suseptiblity of given substance by Quincke's method.
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+\section{Theory and Procedure}
+\subsection{Theory}
+
+
+The Quincke's method is used to determine magnetic susceptibility of diamagnetic or paramagnetic substances in the form of a liquid or an aqueous solution. When an object is placed in a magnetic field, a magnetic moment is induced in it. Magnetic susceptibility $\chi$ is the ratio of the magnetization $I$ (magnetic moment per unit volume) to the applied magnetizing field intensity $H$. The magnetic moment can be measured either by force methods, which involve the measurement of the force exerted on the sample by an inhomogeneous magnetic field or induction methods where the voltage induced in an electrical circuit is measured by varying magnetic moment. The Quincke's method like the Gouy's method belongs to the former class. The force $f$ on the sample is negative of the gradient of the change in energy density when the sample is placed,
+
+\begin{equation}
+    f = \frac{d}{dx} \left[ \frac{1}{2} \mu_{0} (\mu_{r} - \mu_{ra}) H^{2} \right] = \frac{1}{2} \mu_{0} (\chi - \chi_{a}) \frac{d}{dx} H^{2}
+\end{equation}
+
+Here $\mu_{0}$ is permeability of the free space and $\mu_{r}, \chi$ and $\mu_{ra}, \chi_{a}$ are respectively relative permeability and susceptibility of the sample and the air which the sample displaces. The force acting on an element of area $A$ and length $dx$ of the liquid column is $f A dx$, so the total force $F$ on the liquid is
+
+\begin{equation}
+    F = A \int f dx = \frac{A \mu_{0}}{2} (\chi - \chi_{a}) (H^{2} - H_{0}^{2})
+\end{equation}
+
+where the integral is taken over the whole liquid. This means that $H$ is equal to the field at the liquid surface between the poles of the magnet and $H_{0}$ is the field at the other surface away from the magnet. The liquid (density $\rho$) moves under the action of this force until it is balanced by the pressure exerted over the area $A$ due to a height difference $h$ between the liquid surfaces in the two arms of the U-tube. It follows that
+
+\begin{equation}
+    F = A h (\rho - \rho_{a}) g \nonumber
+\end{equation}
+
+Or
+
+\begin{equation}
+    \chi = \chi_{a} + \frac{2}{\mu_{0}} g (\rho - \rho_{a}) \frac{h}{(H^{2} - H_{0}^{2})}
+\end{equation}
+
+In actual practice $\chi_{a}$, density of air $\rho_{a}$ and $H_{0}$ are negligible and can be ignored and the above expression simplifies to
+
+\begin{equation}
+    \chi = \frac{2 \rho g h}{\mu_{0} H^{2}}
+\end{equation}
+
+This equation shows that by plotting $h$ as a function of $H^2$, the susceptiblity $\chi$ can be determined from the slope.The expressions in C.G.S units are given by
+
+\begin{equation}
+    \chi = \chi_a + 2g (\rho - \rho_a)\frac{ h}{( H^{2}- H_0^{2})}
+\end{equation}
+
+\begin{equation}
+	\boxed{    \chi = \frac{2\rho g h}{ H^{2}}}
+\end{equation}
+% till this over
+\pagebreak
+
+
+
+
+\subsection{Procedure}
+A schematic diagram of Quincke's set up is shown in Fig.1. One limb of the glass U-tube is very narrow (about $2-3 \, \mathrm{mm}$ in diameter) and the other one quite wide. The result is that a change in the level of the liquid in the narrow limb does not affect the level in the wider limb. The narrow limb is placed between the pole pieces of an electromagnet shown as N-S such that the meniscus of the liquid lies symmetrically between N-S. The length of the limb should be sufficient enough to keep the lower extreme end of this limb well outside the field of the magnet. The rise or fall $h$ on applying the field is measured by means of a traveling microscope fitted with a micrometer scale of least count of order $10^{-3} \, \mathrm{cm}$.
+
+\subsubsection{Measurement of $H$}
+
+\begin{enumerate}
+    \item Fix the air gap between the pole pieces of the electromagnet to the minimum distance required to insert Quinck's tube without touching the pole pieces.
+    \item Measure the air gap. Each time the air gap changes, the graph will change.
+    \item Mount the Hall probe of the Digital Gaussmeter, DGM-102 in the wooden stand provided and place it at the centre of the air gap such that the surface of the probe is parallel to the pole pieces. The small black crystal in the probe is its transducer, so this part should be at the centre of the air gap.
+    \item Connect the leads of the Electromagnet to the Power Supply, bring the current potentiometer of the Power Supply to the minimum. Switch on the Power Supply and the Gaussmeter.
+    \item Slowly raise the current in the Power Supply and note the magnetic field reading in the Gaussmeter.
+    \item Plot the graph between the current and the magnetic field. This graph will be linear for small values of the current and then the slope will decrease as magnetic saturation occurs in the material of the pole pieces.
+\end{enumerate}
+
+
+\subsubsection{Measurement of $h$}
+\begin{enumerate}
+    \item Test and ensure that each unit (Electromagnet and Power Supply) is functioning properly.
+    \item Measure the density $\rho$ of the specimen (liquid or solution) by specific gravity bottle. If the mass of empty bottle is $w_{1}$, filled with specimen $w_{2}$ and filled with water $w_{3}$, then
+    \begin{equation}
+        \rho = \rho_{\text{water}} \frac{w_{2} - w_{1}}{w_{3} - w_{1}}
+    \end{equation}
+    \item \textit{Scrupulous} cleaning of the tube is essential. \textit{Thoroughly} clean the Quincke's tube, rinse it well with distilled water and dry it (preferably with dry compressed air). Do not use the tube for longer than one laboratory period without recleaning it.
+    \item Keep the Quincke's tube between the pole pieces of the magnet as shown in Fig.1. The length of the horizontal connecting limb should be sufficient to keep the wide limb out of the magnetic field.
+    \item Fill the liquid in the tube and set the meniscus centrally within the pole pieces as shown. Focus the microscope on the meniscus and take reading.
+    \item Apply the magnetic field $H$ and note its value from the calibration, which is done earlier as an auxiliary experiment. Note whether the meniscus rises up or descends down. It rises up for paramagnetic liquids and solutions while descends down for diamagnetics. Readjust the microscope on the meniscus and take reading. The difference of these two readings gives $h$ for the field $H$. The magnetic field between the poles of the magnet does not drop to zero even when the current is switched off. There is a residual magnetic field $R$ which requires a correction.
+    \item Measure the displacement $h$ as a function of applied field $H$ by changing the magnet current in small steps. Plot a graph of $h$ as a function of $H^{2}$.
+\end{enumerate}
+
+
+
+\section{Observation}
+\subsection{Measurement of $h$ and $H$}
+\begin{table}[H]
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Current & Main Scale & Circular Scale \\
+(A) & (mm) & (0.01 mm) \\
+\hline
+0.00    & 9.5  & 48 \\
+0.80  & 11.5 & 10 \\
+1.00    & 12.5 & 5  \\
+1.25 & 13.5 & 3  \\
+1.50  & 16.5 & 2  \\
+1.75 & 18.5 & 12 \\
+2.00    & 20.0 & 19 \\
+2.50  & 24.0   & 12 \\
+2.75 & 24.0   & 38 \\
+3.00    & 24.5 & 15 \\
+3.25 & 25.0   & 40 \\
+3.30  & 25.0   & 48 \\
+\hline
+\end{tabular}
+\caption{$\Delta h$ measurement; Data taken on 21/01/26}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Current & Field Strength \\
+(A) & (Gauss) \\
+\hline
+0.00  & 423  \\
+0.10  & 729  \\
+0.20  & 1052 \\
+0.30  & 1400 \\
+0.40  & 1769 \\
+0.50  & 2150 \\
+0.60  & 2550 \\
+0.70  & 2970 \\
+0.80  & 3380 \\
+0.90  & 3790 \\
+1.00  & 4210 \\
+1.50  & 6340 \\
+2.10  & 8490 \\
+2.50  & 10230 \\
+3.00  & 11840 \\
+3.50  & 13260 \\
+3.55 & 13390 \\
+\hline
+\end{tabular}
+\caption{$H$ measurement; Data taken on 21/01/26}
+\end{minipage}
+\end{table}
+add least count\\
+add 3M, conc and other data, also add the previous data too of that table to not include Cus04 ka data, why repeat add and toehr stuff toto
+
+
+\subsection{Comments and Sources of Error}
+\begin{enumerate}
+	\item sadf
+	\item adf
+\end{enumerate}
+\section{Analysis}
+\subsection{Error propagation}
+
+Below we summarise the error propagation used to obtain uncertainties on the predicted magnetic field at the height-measurement currents and on the derived quantity \(B^{2}\).  The notation is:
+
+\begin{itemize}
+  \item \(I\) : current (measured where height \(h\) was taken).
+  \item \(B(I)=m_B\,I + c_B\) : linear fit of magnetic field vs current (fit parameters \(m_B,c_B\)).
+  \item \(\sigma_{m},\ \sigma_{c}\) : standard uncertainties (one-sigma) of the fitted parameters \(m_B,c_B\).
+  \item \(\mathrm{Cov}(m,c)\) : covariance between \(m_B\) and \(c_B\) from the fit (if available).
+  \item \(\hat{B}=B_{\text{pred}}=m_B I + c_B\) : predicted \(B\) at a given \(I\).
+  \item \(\sigma_{\hat{B}}\) : uncertainty on the predicted \(B\).
+  \item \(x=B^{2}\) and \(\sigma_x\) : the squared field and its uncertainty.
+  \item \(\Delta h\) : measured meniscus rise, with uncertainty \(\sigma_{h}\).
+\end{itemize}
+
+\paragraph{Uncertainty on the predicted field \(\hat{B}\).}
+Using standard linear propagation for a function \(f(m,c)=mI+c\),
+\[
+\mathrm{Var}(\hat{B})=\left(\frac{\partial f}{\partial m}\right)^{2}\mathrm{Var}(m)
++ \left(\frac{\partial f}{\partial c}\right)^{2}\mathrm{Var}(c)
++ 2\left(\frac{\partial f}{\partial m}\right)\left(\frac{\partial f}{\partial c}\right)\mathrm{Cov}(m,c).
+\]
+Since \(\partial f/\partial m = I\) and \(\partial f/\partial c = 1\), this becomes
+\[
+\boxed{\;
+\sigma_{\hat{B}}^{2} = I^{2}\sigma_{m}^{2} + \sigma_{c}^{2} + 2 I\,\mathrm{Cov}(m,c)
+\;}.
+\]
+If the covariance \(\mathrm{Cov}(m,c)\) is not available or is neglected, use the conservative approximation
+\[
+\boxed{\;
+\sigma_{\hat{B}} \approx \sqrt{I^{2}\sigma_{m}^{2} + \sigma_{c}^{2}}
+\; }.
+\]
+
+\paragraph{Uncertainty on \(B^{2}\).}
+For \(x=B^{2}\) and small relative uncertainty on \(B\), linear propagation gives
+\[
+\sigma_{x} = \left|\frac{d(B^{2})}{dB}\right|\,\sigma_{B} = 2\,|B|\,\sigma_{B}.
+\]
+Applied to the predicted field,
+\[
+\boxed{\;
+\sigma_{B^{2}} \approx 2\,\hat{B}\,\sigma_{\hat{B}}
+\;}.
+\]
+(Use the sign of \(\hat{B}\) consistently; in practice \(\hat{B}>0\) here.)
+
+\paragraph{Uncertainty on the height measurement \(\Delta h\).}
+Each height reading was formed from a main scale reading plus a circular-count reading. Treat the least-counts as uniform distribution uncertainties and combine in quadrature. If \(LC_{\text{main}}\) is the main-scale least count (mm) and each circular step equals \(\delta_{\text{circ}}\) (mm) with a least-count \(LC_{\text{circ}}\) in counts, then
+\[
+\sigma_{h} = \sqrt{\left(\frac{LC_{\text{main}}}{\sqrt{12}}\right)^{2}
++ \left(\frac{\delta_{\text{circ}}\cdot LC_{\text{circ}}}{\sqrt{12}}\right)^{2}}.
+\]
+In the code this was implemented as
+\[
+\sigma_{h} = \sqrt{\bigl(h_{\text{lc}}/\sqrt{12}\bigr)^{2} + \bigl(0.01/\sqrt{12}\bigr)^{2}},
+\]
+where \(h_{\text{lc}}\) denotes the main-scale least count (in mm) and \(0.01\)~mm is the circular-step size converted to mm.
+
+\paragraph{Fitting \(\Delta h\) vs \(B^{2}\).}
+With \(x=B^{2}\) (predicted at the height currents) and \(y=\Delta h\), each data point has uncertainties \(\sigma_x\) and \(\sigma_y=\sigma_{h}\). Because both \(x\) and \(y\) have errors we used orthogonal distance regression (ODR) to fit the linear model
+\[
+y = \alpha\,x + \beta,
+\]
+and ODR returns best-fit parameters \(\hat{\alpha},\hat{\beta}\) together with their standard uncertainties \(\sigma_{\alpha},\sigma_{\beta}\). These reported \(\sigma_{\alpha},\sigma_{\beta}\) are used as the final uncertainties for the slope and intercept of \(\Delta h\) vs \(B^{2}\).
+
+\paragraph{Remarks and alternatives}
+\begin{enumerate}
+  \item The propagation formula that includes \(\mathrm{Cov}(m,c)\) is the formally correct one; neglecting the covariance may under- or over-estimate \(\sigma_{\hat{B}}\) depending on the sign and magnitude of \(\mathrm{Cov}(m,c)\). If available, use the full covariance matrix from the fit (ODR provides \texttt{cov\_beta}).
+  \item An alternative to using the linear fit \(B(I)\) for predicting \(\hat{B}\) is to interpolate measured \(B(I)\) (e.g. using \texttt{scipy.interpolate}) and propagate interpolation uncertainty via bootstrap or measurement uncertainties. This avoids model bias at the cost of potentially larger pointwise noise.
+  \item A more rigorous (and often preferable) approach is to perform a \emph{joint} fit of the two datasets by fitting a model of the form
+  \[
+  \Delta h(I) = \alpha\bigl(m_B I + c_B\bigr)^{2} + \beta,
+  \]
+  and fitting simultaneously for \(\alpha,\beta,m_B,c_B\). This treats the relation between \(B\) and \(h\) consistently and yields the full covariance among all parameters; implementation is straightforward with ODR or a non-linear least squares package.
+\end{enumerate}
+
+
+\subsection{Plots}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{field_vs_current.png}
+\caption{Magnetic field $B$ vs current $I$ with linear fit.}
+\label{fig:field_current}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{height_vs_current.png}
+\caption{Meniscus rise $\Delta h$ vs current $I$.}
+\label{fig:height_current}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{h_vs_B2.png}
+\caption{Meniscus rise $\Delta h$ vs squared magnetic field $B^{2}$.}
+\label{fig:h_B2}
+\end{figure}
+
+
+\section{Result and Conclusion}
+asdf
+
+\appendix
+
+
+\bibliography{}
+\end{document}
