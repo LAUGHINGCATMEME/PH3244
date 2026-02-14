@@ -14,7 +14,7 @@ sor,
 \usepackage{circuitikz}
 
 \begin{document}
-\title{PH3244\\Experiment - 4\\e/m}
+\title{PH3244\\Experiment - 4\\ Ratio of e/m}
 \author{Aumshree P. Shah\\20231059}
 \altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
 \date{\today}
@@ -26,6 +26,7 @@ In this experiment we try to measure the electron weight by mass ratio (value of
 \tableofcontents
 \vspace*{\fill}
 \pagebreak
+
 \section{Theory and Procedure}
 \subsection{Theory}
 
@@ -120,26 +121,12 @@ The coils in thsi apparatus have 160 turns each and their radii are 0.14 m. usin
 
 \item Carry on the observations. The voltmeter reading should not be increased beyond 250 volt. A value lower than 80 volt is also not advisable. Similarly the current to the Helmholtz coils should not be more than 2 amp.
 
-\item \textit{Do not leave the beam ON for long periods of time.}
 \end{enumerate}
 
 
 \section{Observations}
 
-\begin{center}
-\centering
-\captionof{table}{For $V_\text{CE} =$ 1.00 V}
-\begin{tabular}{|c|c|c|}
-\hline
-Acc. Vol. (V) & Right-end (cm) & Left-end (cm) \\
-\hline
-1 & 1& 1\\
-\hline
-\end{tabular}
-\end{center}
-
 \begin{enumerate}
-	\item class index: 2.5
 	\item least count of current: 0.1 A 
 	\item least count of voltage: 10 V
 	\item least count of scale: 0.1 mm 
@@ -147,45 +134,179 @@ Acc. Vol. (V) & Right-end (cm) & Left-end (cm) \\
 	\item coil radii: 0.14 m
 \end{enumerate}
 
-\subsection{Comments}
-During the measurement of output characteristics, when $I_\text B$ is above 20 mA, the values of $V_\text{CE}$ and $I_\text C$ decrease and increasre over time. Most values are taken immiditely after adjusting $V_\text{CE}$.
+
+
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1.3 Amp, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & lhs (cm) & rhs (cm) \\
+\hline
+200 & 5.6 & 13.6 \\
+180 & 5.9 & 13.5 \\
+150 & 6.4 & 13.4 \\
+120 & 7.3 & 13.6 \\
+100 & 7.0 & 12.8 \\
+\hline
+\end{tabular}
+\end{minipage}%
+\hspace{0.01\linewidth}%
+\vrule width 0.6pt
+\hspace{0.01\linewidth}%
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{V = 100 V, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Current (A) & lhs (cm) & rhs (cm) \\
+\hline
+0.7 & 5.5 & 15.2 \\
+0.9 & 6.5 & 14.4 \\
+1.0 & 6.7 & 14.0 \\
+1.2 & 7.4 & 13.5 \\
+1.4 & 7.8 & 13.1 \\
+1.6 & 8.1 & 12.8 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at chord no leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 14.8 & 4.5 \\
+180 & 14.5 & 4.7 \\
+150 & 14.2 & 5.1 \\
+100 & 13.9 & 6.8 \\
+\hline
+\end{tabular}
+\end{minipage}%
+\hspace{0.01\linewidth}%
+\vrule width 0.6pt
+\hspace{0.01\linewidth}%
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at diameter no leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 15.3 & 4.3 \\
+180 & 14.4 & 4.7 \\
+150 & 14.1 & 5.35 \\
+120 & 13.9 & 5.8 \\
+100 & 14.0 & 6.9 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\begin{center}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 14.7 & 4.5 \\
+180 & 14.4 & 4.9 \\
+150 & 14.5 & 5.9 \\
+120 & 14.6 & 6.6 \\
+100 & 14.3 & 7.2 \\
+\hline
+\end{tabular}
+\centering
+\\
+\vspace{1cm}
+Data taken on 11 Feb 2026
+\end{center}
+
+
+
 
 
 \section{Calculations and Characteristics}
+\subsection{Sources of Error}
+\subsubsection{Systematic Errors}
+\begin{enumerate}
+	\item The circular beam being not exactaly perpendicular to the magnetic feild.
+	\item Different magnetic feild than the theroratical prodiuced by the coils.
+\end{enumerate}
+
+\subsubsection{Random Errors}
+\begin{enumerate}
+	\item Uncertanity of the instruments.
+	\item Width of the beam.
+	\item Parallex and Human error while alining the crosshair.
+\end{enumerate}
 \subsection{Error Propogation}
-To calculate the variance from least count, we use the formula: 
-$$\sigma = \frac{\text{Least Count}}{\sqrt{12}}$$
-from this we see that the variance is insignificant and hence while plotting graph isn't labeled.\\
-The error due to heating is not taken into consideration. \\
+To calculate the standard deviation from values we have measured with some least count, we use the formula [2]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{12}}
+\end{equation}
+and to calculate the standard deviation for values we have applied to the instrument with some least count, we use the formula [2]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{24}}
+\end{equation}
+\section{Calculation}
+We assume the systematic error to be negligible, we will only make use of Table - III, IV and V to calculate the e/m value as we need to account for the random errors. \\
+We use the formula for error propogation as described in the previous section and do a $y = mx$ fit for the slope of $V$ vs $d^2$ as follows:
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Mean diameter (cm) & $\sigma_{\text{least}}$ (cm) & $\sigma_{\text{meas}}$ (cm) & $\sigma$ (cm) & $D^2$ (cm$^2$) & $\sigma_{D^2}$ (cm$^2$) \\
+\hline
+10.5  & 0.04 & 0.44& 0.4  & 110   & 9   \\
+9.67  & 0.04 & 0.15& 0.16 & 93    & 3   \\
+8.82  & 0.04 & 0.26& 0.26 & 78    & 5   \\
+8.05  & 0.04 & 0.07& 0.08 & 64.8  & 1.3 \\
+7.10  & 0.04 & 0               & 0.04 & 50.4  & 0.6 \\
+\hline
+\end{tabular}
+\caption{Calcuation of diameter by rhs-lhs and the error propogation}
+\end{table}
 
+{}Plotting this we get:
 
-\subsection{Input Characteristics}
-From Table - 1,2,3 we plot them for input characteristics. The error in data points is not taken into consideration due to least count as it is insignificant.
 \begin{figure}[H]
-    \centering
-% \includegraphics[width=0.75\linewidth]{inputchar}
-    \caption{Input characterists}
-    \label{fig:input}
+\centering
+\includegraphics[width=0.75\linewidth]{lmfao}
+\caption{Plot of $V$ vs $d^2$}
 \end{figure}
+This has a slope of  0.513123 $\pm$ 0.0034
+hence putting this in Eq - 5: 
+$$\frac e m = 7.576 \times  10^{10} \times \frac 1 k  $$
+where $k$ is the slope we get the ratio of $e/m$, in SI unit as: $ 1.476 \times 10^{11} \si{\coulomb\per\kilogram}$
 
-
-\subsection{Output Characteristics}
-From Table - 4,5,6 we plot them for output characteristics. Here again the error in data points is not taken into consideration due to least count as it is insignificant. We plot the graph till only 10 V for $V_\text{CE}$ as the characteristics after that is the same.
-\begin{figure}[H]
-    \centering
-% \includegraphics[width=0.75\linewidth]{outputchar}
-    \caption{Output Characterists}
-    \label{fig:output}
-\end{figure}
 
 \section{Result and Conclusion}
-From teh graph of Input characteristics, we can say that the transistor gets turned on in teh range of $\approx$0.6-0.7 V. Furthermore the higher the voltage across Collector-Emmiter, the greater the Base-Emmiter voltage is required. \\
-
-For the Output characteristics we see that for a fixed base voltage, the Collecter-Current gets multiplied by some amount which saturates after some voltage, although we see for 80mA base current the current keeps on increaseing linearly after some Collector-Emmiter Voltage.
+From this we get the value of $e/m$ as $ 1.476 \times 10^{11} \pm  0.025 $ $     \si{\coulomb\per\kilogram}$ with 95\% confidence. The source of error form its acutal value is arribured to the systematic errors described in section - III and other random error which are neglicted.
 \vspace{1cm}
 \hrule
+\vspace{3cm}
 \nocite{*}
-\bibliographystyle{apsrev4-2}
-\bibliography{2}
+\begin{thebibliography}{9}
+
+\bibitem{ph3244_repo}
+LaughingCatMeme,
+\textit{PH3244 Lab Code Repository},
+GitHub repository,
+\url{https://github.com/LAUGHINGCATMEME/PH3244}
+(accessed: 14 Feb 2026).
+
+\bibitem{tewari_uncertainty}
+G.~M.~Tewari,
+\textit{Measurement Uncertainty},
+NABL Assessor Workshop Material,
+\url{https://www.ilsi-india.org/International_Workshop_and_Training_Program_on_Good_Food_Laboratory_Practices/Measurement%20Uncertainty%20by%20Dr.%20G%20M%20Tewari,%20NABL%20Assessor.pdf}
+(accessed: 14 Feb 2026).
+
+\end{thebibliography}
 
 \end{document}
