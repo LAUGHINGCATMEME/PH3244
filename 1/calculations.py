@@ -13,7 +13,7 @@ circularscale = np.array([48,10,5,3,2,12,19,12,38,15,40,48])
 # delta_h as in your file
 delta_h = mainscale + 0.01*circularscale - 9.98 
 
-current_A = np.array([0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.5,2.1,2.5,3.0,3.5,3.55])
+current_A =  current_h
 feild_str_gauss = np.array([423,729,1052,1400,1769,2150,2550,2970,3380,3790,4210,6340,8490,10230,11840,13260,13390]) 
 
 # -------------------------

@@ -69,9 +69,29 @@ This equation shows that by plotting $h$ as a function of $H^2$, the susceptibli
 \begin{equation}
 	\boxed{    \chi = \frac{2\rho g h}{ H^{2}}}
 \end{equation}
-% till this over
-\pagebreak
 
+The mass susceptibility $\chi^{\prime}$ is given by $\chi / \rho$ and the molar susceptibility $\chi^{\prime \prime}$ by $M \chi^{\prime}$ where $M$ is the molecular weight of the specimen. In the case of solutions, correction must be made for the diamagnetic contribution of water. If the number of water molecules per unit volume is not very different in the solution from that in pure water,
+
+\begin{equation}
+	\boxed { \chi_{\text{solution}} = \chi_{\text{salt}} + \chi_{\text{water}}}
+\end{equation}
+
+In general if $m_{s}$ is the mass of the salt dissolved in $m_{w}$ of water,
+
+\begin{equation}
+	\boxed{\chi_{\text{solution}}^{\prime} = \frac{m_{s}}{m_{s} + m_{w}} \chi_{\text{salt}}^{\prime} + \frac{m_{w}}{m_{s} + m_{w}} \chi_{\text{water}}^{\prime}}
+\end{equation}
+
+Mass susceptibility of the salt, $\chi_{\text{salt}}^{\prime}$ can be obtained from this relation.
+
+In a paramagnetic substance there are non-interacting permanent magnetic dipoles. The magnetizing field tends to align these parallel to the field. Thermal effects on the other hand tend to destroy this alignment. The result is that, for $k T \gg \mu_{0} \mu_{B} H$, the volume susceptibility $\chi_{\text{salt}}$ at temperature $T$ is given by
+
+\begin{align}
+& \chi_{\text{salt}} = \frac{I}{H} = \frac{N \mu_{0} (p \mu_{B})^{2}}{3 k T} = \frac{C}{T}, \quad \text{(S.I. units)} \\
+& \chi_{\text{salt}} = \frac{N (p \mu_{B})^{2}}{3 k T} = \frac{C}{T}, \quad \text{(C.G.S. units)}
+\end{align}
+
+where $k$ is Boltzmann constant, $N (= N_{A} \rho_{\text{salt}} / M)$ is the number of ions per unit volume and $\mu_{B}$ is Bohr magneton. $p$ is the magneton number which may be calculated from the measured value of $\chi_{\text{salt}}$ (or $\chi^{\prime}_{\text{salt}} = \chi_{\text{salt}} / \rho_{\text{salt}}$) and compared with the theoretical value depending on $L$, $S$ and $J$ of the magnetic ion as given in Appendix I. Eq. 10 expresses Curie law and the constant $C$ is called the Curie constant. The above expression assumes that the magnetic field acting on each ion is just the applied field and contributions due to neighbouring magnetic ions are neglected. For dilute paramagnetic materials this approximation is valid.
 
 
 
@@ -162,117 +182,72 @@ Current & Field Strength \\
 \caption{$H$ measurement; Data taken on 21/01/26}
 \end{minipage}
 \end{table}
-add least count\\
+Mass and weight data not taken, experiment repeated and the readings are as follows:
+\begin{center}
+	\begin{table}[H]
+		\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+Current (A)&	H (10*Gauss)&	Main Scale (mm)&	Circular Scale (0.01 mm)\\
+\hline
+0.00    & 64   & 10   & 46  \\ 
+0.50  & 277  & 10.5 & 45  \\ 
+0.75 & 405  & 11   & 9   \\ 
+1.00    & 530  & 11   & 36  \\ 
+1.20  & 625  & 12.5 & 35  \\ 
+1.37 & 705  & 15   & 10  \\ 
+1.58 & 812  & 16   & 35  \\ 
+1.81 & 915  & 17.5 & 11  \\ 
+2.01 & 1001 & 21.5 & 20  \\
+2.20  & 1083 & 23.5 & 0   \\ 
+\hline
+\end{tabular}
+\caption{Simutanious measurement of both $H$ and  $h$; Data taken on 16/02/26}
+\end{table}
+\end{center}
+
+Mass of solute: 8.4933 g \\
+Volume of water: 17.0 ml\\
+Final volume of water: 20.0 ml\\
+
+
+Least count of readings are the significant figures written in the tables.
 add 3M, conc and other data, also add the previous data too of that table to not include Cus04 ka data, why repeat add and toehr stuff toto
 
 
-\subsection{Comments and Sources of Error}
-\begin{enumerate}
-	\item sadf
-	\item adf
-\end{enumerate}
-\section{Analysis}
+\section{Calculation and Analysis}
+\subsection{Sources of Error}
+
+
+
 \subsection{Error propagation}
 
-Below we summarise the error propagation used to obtain uncertainties on the predicted magnetic field at the height-measurement currents and on the derived quantity \(B^{2}\).  The notation is:
-
-\begin{itemize}
-  \item \(I\) : current (measured where height \(h\) was taken).
-  \item \(B(I)=m_B\,I + c_B\) : linear fit of magnetic field vs current (fit parameters \(m_B,c_B\)).
-  \item \(\sigma_{m},\ \sigma_{c}\) : standard uncertainties (one-sigma) of the fitted parameters \(m_B,c_B\).
-  \item \(\mathrm{Cov}(m,c)\) : covariance between \(m_B\) and \(c_B\) from the fit (if available).
-  \item \(\hat{B}=B_{\text{pred}}=m_B I + c_B\) : predicted \(B\) at a given \(I\).
-  \item \(\sigma_{\hat{B}}\) : uncertainty on the predicted \(B\).
-  \item \(x=B^{2}\) and \(\sigma_x\) : the squared field and its uncertainty.
-  \item \(\Delta h\) : measured meniscus rise, with uncertainty \(\sigma_{h}\).
-\end{itemize}
-
-\paragraph{Uncertainty on the predicted field \(\hat{B}\).}
-Using standard linear propagation for a function \(f(m,c)=mI+c\),
-\[
-\mathrm{Var}(\hat{B})=\left(\frac{\partial f}{\partial m}\right)^{2}\mathrm{Var}(m)
-+ \left(\frac{\partial f}{\partial c}\right)^{2}\mathrm{Var}(c)
-+ 2\left(\frac{\partial f}{\partial m}\right)\left(\frac{\partial f}{\partial c}\right)\mathrm{Cov}(m,c).
-\]
-Since \(\partial f/\partial m = I\) and \(\partial f/\partial c = 1\), this becomes
-\[
-\boxed{\;
-\sigma_{\hat{B}}^{2} = I^{2}\sigma_{m}^{2} + \sigma_{c}^{2} + 2 I\,\mathrm{Cov}(m,c)
-\;}.
-\]
-If the covariance \(\mathrm{Cov}(m,c)\) is not available or is neglected, use the conservative approximation
-\[
-\boxed{\;
-\sigma_{\hat{B}} \approx \sqrt{I^{2}\sigma_{m}^{2} + \sigma_{c}^{2}}
-\; }.
-\]
-
-\paragraph{Uncertainty on \(B^{2}\).}
-For \(x=B^{2}\) and small relative uncertainty on \(B\), linear propagation gives
-\[
-\sigma_{x} = \left|\frac{d(B^{2})}{dB}\right|\,\sigma_{B} = 2\,|B|\,\sigma_{B}.
-\]
-Applied to the predicted field,
-\[
-\boxed{\;
-\sigma_{B^{2}} \approx 2\,\hat{B}\,\sigma_{\hat{B}}
-\;}.
-\]
-(Use the sign of \(\hat{B}\) consistently; in practice \(\hat{B}>0\) here.)
-
-\paragraph{Uncertainty on the height measurement \(\Delta h\).}
-Each height reading was formed from a main scale reading plus a circular-count reading. Treat the least-counts as uniform distribution uncertainties and combine in quadrature. If \(LC_{\text{main}}\) is the main-scale least count (mm) and each circular step equals \(\delta_{\text{circ}}\) (mm) with a least-count \(LC_{\text{circ}}\) in counts, then
-\[
-\sigma_{h} = \sqrt{\left(\frac{LC_{\text{main}}}{\sqrt{12}}\right)^{2}
-+ \left(\frac{\delta_{\text{circ}}\cdot LC_{\text{circ}}}{\sqrt{12}}\right)^{2}}.
-\]
-In the code this was implemented as
-\[
-\sigma_{h} = \sqrt{\bigl(h_{\text{lc}}/\sqrt{12}\bigr)^{2} + \bigl(0.01/\sqrt{12}\bigr)^{2}},
-\]
-where \(h_{\text{lc}}\) denotes the main-scale least count (in mm) and \(0.01\)~mm is the circular-step size converted to mm.
-
-\paragraph{Fitting \(\Delta h\) vs \(B^{2}\).}
-With \(x=B^{2}\) (predicted at the height currents) and \(y=\Delta h\), each data point has uncertainties \(\sigma_x\) and \(\sigma_y=\sigma_{h}\). Because both \(x\) and \(y\) have errors we used orthogonal distance regression (ODR) to fit the linear model
-\[
-y = \alpha\,x + \beta,
-\]
-and ODR returns best-fit parameters \(\hat{\alpha},\hat{\beta}\) together with their standard uncertainties \(\sigma_{\alpha},\sigma_{\beta}\). These reported \(\sigma_{\alpha},\sigma_{\beta}\) are used as the final uncertainties for the slope and intercept of \(\Delta h\) vs \(B^{2}\).
-
-\paragraph{Remarks and alternatives}
-\begin{enumerate}
-  \item The propagation formula that includes \(\mathrm{Cov}(m,c)\) is the formally correct one; neglecting the covariance may under- or over-estimate \(\sigma_{\hat{B}}\) depending on the sign and magnitude of \(\mathrm{Cov}(m,c)\). If available, use the full covariance matrix from the fit (ODR provides \texttt{cov\_beta}).
-  \item An alternative to using the linear fit \(B(I)\) for predicting \(\hat{B}\) is to interpolate measured \(B(I)\) (e.g. using \texttt{scipy.interpolate}) and propagate interpolation uncertainty via bootstrap or measurement uncertainties. This avoids model bias at the cost of potentially larger pointwise noise.
-  \item A more rigorous (and often preferable) approach is to perform a \emph{joint} fit of the two datasets by fitting a model of the form
-  \[
-  \Delta h(I) = \alpha\bigl(m_B I + c_B\bigr)^{2} + \beta,
-  \]
-  and fitting simultaneously for \(\alpha,\beta,m_B,c_B\). This treats the relation between \(B\) and \(h\) consistently and yields the full covariance among all parameters; implementation is straightforward with ODR or a non-linear least squares package.
-\end{enumerate}
+\subsection{Calculations}
+From Table - 3 we calculate $h$
+\begin{center}
+	\begin{table}[H]
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Current (A)&	H (10*Gauss)&	Main Scale (mm)&	Circular Scale (0.01 mm)& 	$h$  (mm)	&$H^2$ (G)\\
+\hline
+0    & 64   & 10   & 46  & 0    & 409600   \\ 
+0.5  & 277  & 10.5 & 45  & 0.49 & 7672900  \\ 
+0.75 & 405  & 11   & 9   & 0.63 & 16402500 \\ 
+1    & 530  & 11   & 36  & 0.9  & 28090000 \\ 
+1.2  & 625  & 12.5 & 35  & 2.39 & 39062500 \\ 
+1.37 & 705  & 15   & 10  & 4.64 & 49702500 \\ 
+1.58 & 812  & 16   & 35  & 5.89 & 65934400 \\ 
+1.81 & 915  & 17.5 & 11  & 7.15 & 83722500 \\ 
+2.01 & 1001 & 21.5 & 20  & 11.24 & 100200100 \\
+2.2  & 1083 & 23.5 & 0   & 13.04 & 117288900 \\ 
+\hline
+\end{tabular}
+\caption{Simutanious measurement of both $H$ and  $h$; Data taken on 16/02/26}
+\end{table}
+\end{center}
+Plotting the data from Table - 4 we get:
 
 
-\subsection{Plots}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{field_vs_current.png}
-\caption{Magnetic field $B$ vs current $I$ with linear fit.}
-\label{fig:field_current}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{height_vs_current.png}
-\caption{Meniscus rise $\Delta h$ vs current $I$.}
-\label{fig:height_current}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{h_vs_B2.png}
-\caption{Meniscus rise $\Delta h$ vs squared magnetic field $B^{2}$.}
-\label{fig:h_B2}
-\end{figure}
 
 
 \section{Result and Conclusion}

@@ -1,0 +1,143 @@
+\documentclass[%
+sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+]{revtex4-2}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+
+
+
+\begin{document}
+\title{PH3244\\Experiment - \\ }
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+	ABSTRACT,  write at last, add comments her
+\\WRITE EXP NO AND NAME
+\\theory
+\\check a llook at prcedure
+\\ TILL HERE MAKE SURE YOU CLEAR THE TOP TWO AND THEM MOVE FORWARDS
+\\ TILL HERE MAKE SURE TO FINALIZE THE RESULT FROM CALC
+\\error and prop formula with ref
+\\do the calc and result
+\centering
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+\pagebreak
+\section{Theory and Procedure}
+	\subsection{Theory\footnote{Please refer to [\cite{ph3244repo}] for a full examination of theory, only the important results will be discussed here.}}
+
+\subsection{Procedure}Refer to the manual [\cite{ph3244repo}] for a look at procedure, although the required pages will be attached at the back for sumbition along with the signed report.
+
+\section{Observation}
+\subsection{For constant $V_{\text{DS}}$}
+\begin{table}[H]
+\begin{minipage}{0.48\linewidth}
+	\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+$V_{\text{GS}}$  (V) & $I_D$ (mA) \\
+\hline
+0.000 & 7.17 \\
+\hline
+\end{tabular}
+\caption{$V_{\text{DS}} = -2.65\si{\volt}$}
+\end{center}
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+	\begin{center}
+
+
+\begin{tabular}{|c|c|}
+\hline
+$V_{\text{GS}}$  (V) & $I_D$ (mA) \\
+\hline
+0.000 & 8.58 \\
+\hline
+\end{tabular}
+\caption{$V_{\text{DS}} = -5\si{\volt}$}
+\end{center}
+\end{minipage}
+\hfill
+\end{table}
+\begin{center}
+	Data taken on 6 Feb 2026 
+\end{center}
+
+\section{Calculations, Analysis and Characteristics}
+\subsection{Sources of Error}
+\subsubsection{Systematic Errors}
+\begin{enumerate}
+	\item A
+\end{enumerate}
+\subsubsection{Random Errors}
+\begin{enumerate}
+	\item Uncertanity in instruments
+\end{enumerate}
+\subsection{Error Propogation}
+To calculate the standard deviation from values we have measured with some least count, and the values we have applied digitally, we use the formula [\cite{tewari_uncertainty}]: 
+
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{12}}
+\end{equation}
+and to calculate the standard deviation for values we have applied on analog instrument with some least count, we use the formula [\cite{tewari_uncertainty}]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{24}}
+\end{equation}
+ERRROR PROPEOGASTION AND CITE:
+[\cite{taylor_error_analysis}] that: 
+\begin{equation}
+	\Delta \mu = \mu \sqrt {\left( \frac {\Delta g_m }{g_m} \right)^2 + \left( \frac {\Delta r_d}{r_d} \right)^2}
+\end{equation}
+
+\subsection{Plots and Calculation\footnote{Refer to [\cite{ph3244repo}] for the code used to plot and determine the slope.}}
+\begin{figure}[H]
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+	%\includegraphics[width=1\linewidth]{obs1_nofit}
+	\caption{$I_d$ vs $V_{GS}$ from Table - I, II}
+\end{center}
+
+\end{minipage}
+\begin{minipage}{0.48\linewidth}
+\begin{center}
+	%\includegraphics[width=1\linewidth]{obs2_nofit}
+	\caption{$I_d$ vs $V_{DS}$ from Table - III, IV, V}
+\end{center}
+\end{minipage}
+\end{figure}
+
+
+
+
+
+
+\section{Result and Conclusion}
+
+\cite{ph3244repo}
+\cite{tewari_uncertainty}
+\cite{taylor_error_analysis}
+\cite{standard_error_wiki}
+
+\vspace{1cm}
+\hrule
+\vspace{1cm}
+\appendix
+\section{Appendis}
+theo val.\\
+wat cam be o,[rpved
+
+\bibliographystyle{apsrev4-2}
+\bibliography{refrences}
+
+\end{document}

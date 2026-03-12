@@ -1,0 +1,308 @@
+\documentclass[%
+sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+longbibliography,
+]{revtex4-2}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{empheq, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{hyperref}
+
+
+\begin{document}
+\title{PH3244\\Experiment - 7\\Frank Hertz}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we find the first ionizaion energy of a element in the Frank-Hertz tube.
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+\section{Theory and Procedure}
+\subsection{Theory}
+
+
+
+
+\subsection{Procedure}Refer to the manual [\cite{ph3244repo}] for a look at procedure, although the required pages will be attached at the back for sumbition along with the signed report.
+\section{Observation}
+\subsubsection{General Values\footnote{The least count is to be interpreted from the significant figures written}}
+\begin{align*}
+	\text{Model} &: \text{FH-300H}\\
+	V_\text{G1K} &= 1.50 \si{\volt}\\
+	V_\text{G2A} &= 7.50 \si{\volt}\\
+\end{align*}
+\subsection{Model 1 test data}
+\begin{table}[H]
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$V_{ork}$ (V) & $I\,(10^{-10}\,\mathrm{A})$ \\
+\hline
+2.0  & 0   \\
+11.8 & 1   \\
+13.6 & 3   \\
+14.7 & 5   \\
+16.9 & 12  \\
+18.6 & 16  \\
+19.5 & 18  \\
+20.5 & 19  \\
+22.7 & 20  \\
+24.6 & 18  \\
+25.6 & 19  \\
+26.4 & 20  \\
+27.3 & 25  \\
+28.1 & 30  \\
+29.4 & 40  \\
+30.3 & 46  \\
+31.5 & 50  \\
+32.2 & 51  \\
+32.8 & 50  \\
+33.3 & 49  \\
+34.0 & 47  \\
+34.8 & 42  \\
+35.7 & 35  \\
+\end{tabular}
+\end{minipage}%
+\hfill % Adds horizontal stretchable space between minipages
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|}
+36.3 & 33  \\
+37.0 & 32  \\
+37.8 & 38  \\
+38.4 & 48  \\
+38.9 & 58  \\
+39.3 & 69  \\
+39.6 & 78  \\
+40.0 & 88  \\
+40.8 & 107 \\
+41.2 & 116 \\
+41.7 & 123 \\
+42.7 & 132 \\
+43.1 & 132 \\
+43.5 & 130 \\
+44.3 & 119 \\
+45.1 & 103 \\
+45.7 & 88  \\
+46.6 & 69-96\footnote{Here we seee that after some time even if the $V_\text{G2K}$ is constant the current inceases over time, hence in the next data we shall take it instantiously and will not allow any other effects to affect $I$.}\\
+\hline
+$V_{ork}$ (V) & $I\,(10^{-10}\,\mathrm{A})$ \\
+\hline
+\end{tabular}
+\end{minipage}
+\caption{Test data to see if there are any systematic errors}
+\end{table}
+
+
+\subsection{Model 2 instantious data}
+\begin{table}[H]
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+$V_{ork}$ (V) & $I\,(10^{-10}\,\mathrm{A})$ \\
+\hline
+2.0 & 1 \\
+10.7 & 2 \\
+12.2 & 6 \\
+14.0 & 11 \\
+14.8 & 13 \\
+16.4 & 13 \\
+17.2 & 12 \\
+18.3 & 10 \\
+19.6 & 8 \\
+20.1 & 7 \\
+21.5 & 6 \\
+23.0 & 8 \\
+23.7 & 12 \\
+24.7 & 17 \\
+25.5 & 20 \\
+26.3 & 22 \\
+27.6 & 22 \\
+28.8 & 20 \\
+29.6 & 18 \\
+30.6 & 15 \\
+31.5 & 12 \\
+32.4 & 8 \\
+33.5 & 12 \\
+35.7 & 18 \\
+36.6 & 22 \\
+37.4 & 26 \\
+38.0 & 31 \\
+39.0 & 32 \\
+39.9 & 32 \\
+40.8 & 29 \\
+41.6 & 26 \\
+42.3 & 23 \\
+43.2 & 19 \\
+44.1 & 17 \\
+44.4 & 14 \\
+46.8 & 16 \\
+\end{tabular}
+\end{minipage}%
+\hfill % Adds horizontal stretchable space between minipages
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{|c|c|}
+47.8 & 21 \\
+49.1 & 28 \\
+50.5 & 37 \\
+51.3 & 39 \\
+52.3 & 40 \\
+53.8 & 37 \\
+55.2 & 31 \\
+56.5 & 25 \\
+57.8 & 21 \\
+58.8 & 22 \\
+59.8 & 25 \\
+61.6 & 35 \\
+62.6 & 40 \\
+63.3 & 44 \\
+64.1 & 47 \\
+65.2 & 48 \\
+66.2 & 48 \\
+67.4 & 45 \\
+68.2 & 42 \\
+70.1 & 36 \\
+71.2 & 35 \\
+72.8 & 38 \\
+73.9 & 43 \\
+74.9 & 48 \\
+76.4 & 55 \\
+77.0 & 57 \\
+79.0 & 61 \\
+79.7 & 62 \\
+80.4 & 62 \\ 
+81.3 & 60 \\
+82.8 & 58 \\
+84.6 & 56 \\
+85.0 & 58 \\
+86.1 & 59 \\
+87.3 & 63 \\
+88.9 & 69 \\
+90.8 & 78 \\
+92.6 & 82 \\
+92.8 & 83 \\
+\hline
+$V_{ork}$ (V) & $I\,(10^{-10}\,\mathrm{A})$ \\
+\hline
+\end{tabular}
+\end{minipage}
+\caption{Data taken instationously to reduce any systematic errors due to heating}
+\end{table}
+\begin{center}
+	Data taken on 12 Mar 2026.
+\end{center}
+
+\section{Calculations, Analysis and Characteristics}
+\subsection{Sources of Error}
+
+\noindent % Prevents paragraph indentation before the first minipage
+\begin{minipage}[t]{0.48\textwidth}
+\subsubsection{Systematic Errors}
+\begin{enumerate}
+	\item In alignment of the beam with the crystal.
+	\item Improper standing wave produced than the theoratical.
+	\item Non Parallel Screen causing increase in distance.
+	\item Index of fringe being differnet than what is measured. 
+\end{enumerate}
+\end{minipage}
+\hfill % Distributes remaining horizontal space
+\begin{minipage}[t]{0.48\textwidth}
+\subsubsection{Random Errors}
+\begin{enumerate}
+	\item Human errros in measurement.
+	\item Uncertanity in instruments.
+	\item Shaking of table resulting in moving fringes.
+	\item Diffraction increasing the fringe width.
+\end{enumerate}
+\end{minipage}
+
+\subsection{Error Propogation}
+To calculate the standard deviation from values we have measured with some least count, and the values we have applied digitally, we use the formula [\cite{tewari_uncertainty}]: 
+
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{12}}
+\end{equation}
+and to calculate the standard deviation for values we have applied on analog instrument with some least count, we use the formula [\cite{tewari_uncertainty}]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{24}}
+\end{equation}
+Since all our observations only satisfy the criteria for Equation-6 we will be using that. Now from Equation-1,2,3 we can write $V$ as : 
+\begin{equation}
+	V = \mu n\lambda \frac{\sqrt{{D^2+L^2}}}{D}
+\end{equation}
+to calculate the error of $V$ we notice that it'll only (my only here I mean the most significant factor of error) will be the uncertainty in $D$, hence in error calculation we will assume other errors are negligible.
+Now using formula for error propogaiton [\cite{taylor_error_analysis}], efor Equation-8 we see that: 
+\begin{align*}
+	\sigma_V / \sigma_D &=  \frac {\text d}{\text d D} V\\
+		 &= \mu n \lambda \frac 1 D\frac {\text d}{\text d D}  \left( \sqrt{D^2+L^2} \right) + \mu n \lambda \sqrt{D^2+L^2}\frac {\text d}{\text d D}  \left( \frac 1 D \right) 
+\end{align*}
+\begin{equation}
+	\implies \sigma_V	 =\boxed{\left( \mu n \lambda \frac {1}{\sqrt{D^2+L^2}} - \mu n \lambda \sqrt{D^2+L^2}\frac {1}{D^2} \right) \sigma_D}
+\end{equation}
+Similarly from Eqation-4,5 we get the uncertainty in $\beta$ and $K$ as:
+\begin{equation}
+	\sigma_\beta = 2V\rho \sigma_V
+\end{equation}
+\begin{equation}
+	\sigma_K = \frac {2}{\rho V^3} \sigma_V
+\end{equation}
+
+\subsection{Calculations}
+
+First we see that since the Table-2 has only 2 data points, where also there is a good chance that it might have high precision and low accuract, we wil not consider the data from Table-2 in our calculations. Using Equation-8,4,5 to calculate the variables and Equation-9,10,11 to calcualte their uncertainty, we get:
+\begin{table}[H]
+\centering
+\begin{tabular}{c c c c c c c}
+\hline
+$n$ & Distance & Least Count & SI Distance & SI Uncertainty & Velocity & Velocity Uncertainty  \\
+    & (cm) & (cm) & (m) & (m) & (m/sec) & (m/sec) \\
+\hline
+1 & 0.45 & 0.05 & 0.0045 & 0.00014 & 1343 & 42 \\
+2 & 0.85 & 0.05 & 0.0085 & 0.00014 & 1422 & 23 \\
+3 & 1.30 & 0.10 & 0.0130 & 0.00029 & 1394 & 29 \\
+4 & 1.80 & 0.10 & 0.0180 & 0.00029 & 1343 & 19 \\
+\hline
+\end{tabular}
+
+\caption{Calculating velocity from TABLE-1}
+\end{table}
+Using the weighted average formula [\cite{standard_error_wiki}] we can calculate $V$, $\beta$ and $K$ which will be discussed in results. 
+\begin{equation}
+	\bar{v}=\frac{\sum_{i=1}^{N} \frac{v_i}{\sigma_i^2}}{\sum_{i=1}^{N} \frac{1}{\sigma_i^2}}
+\end{equation}
+\begin{equation}
+	\sigma_{\bar{v}} = \sqrt{\frac{1}{\sum_{i=1}^{N} \frac{1}{\sigma_i^2}}}
+\end{equation}
+e weighted average we get is: From this 
+
+\section{Result and Conclusion}
+By taking the weighted average of velocity and Equaiton 12,13 of each value from TABLE-3, we get value of $V$ as $\boxed{V = 1375 \pm 12 \text{ m/sec}}$; From Equation-4,10 we get the bulk modulus as $\boxed{\beta = 1.88 \pm 0.03 \text{ GPa}}$ and finally from Equation-5,11 we get the compressiblity as $\boxed{K = 53.67 \pm 0.08 \times 10^{-6}\text{ atm}}$ . We will compare this values with the theoratical values in Appendix-A.
+
+\vspace{1cm}
+\hrule
+\vspace{1cm}
+\appendix
+
+\bibliographystyle{apsrev4-2}
+\bibliography{refrences}
+\hfill\pagebreak
+
+\section{Theoratical values and comparision}
+The theoratical value for bulk modulus of water at 20\si{\celsius} is around 2.2 GPa, this is 16\% different from the calculated while the uncertainty being only 1\%. The reason for this are the systematic errors discussed in the error analysis section.
+\section{Improvments in procedure}
+We can measure the $D$ on a flourosent paper in dark room which will make the readings a lot easier and accurte. Furthermore we can calculate the $D$ at very large $L$ this will make the relative uncertainty of $D$ small and thus giving more accurate readings. For the random error, we can take more readings to reduce them.
+\end{document}
