@@ -1,0 +1,21 @@
+\contentsline {title}{PH3244\\Experiment - \\ NAME}{1}{}
+\contentsline {abstract}{Synopsis}{1}{}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Theory and Procedure}{2}{}
+\contentsline {subsection}{\numberline {A}Theory}{2}{}
+\contentsline {subsection}{\numberline {B}Procedure}{2}{}
+\contentsline {section}{\numberline {II}Observation}{2}{}
+\contentsline {subsection}{\numberline {A}obs1}{2}{}
+\contentsline {subsection}{\numberline {B}obs2}{2}{}
+\contentsline {subsection}{\numberline {C}Comments}{2}{}
+\contentsline {section}{\numberline {III}Calculations and Characteristics}{2}{}
+\contentsline {subsection}{\numberline {A}Sources of Error}{2}{}
+\contentsline {subsubsection}{\numberline {1}Systematic Errors}{2}{}
+\contentsline {subsubsection}{\numberline {2}Random Errors}{2}{}
+\contentsline {subsection}{\numberline {B}Error Propogation}{2}{}
+\contentsline {subsection}{\numberline {C}obs1}{3}{}
+\contentsline {section}{\numberline {IV}Result and Conclusion}{3}{}
+\appendix 
+\contentsline {section}{\numberline {A}Comments}{3}{}

@@ -1,0 +1,17 @@
+\contentsline {title}{PH3244\\Experiment - 4\\ Ratio of e/m}{1}{}
+\contentsline {abstract}{Synopsis}{1}{}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Theory and Procedure}{2}{}
+\contentsline {subsection}{\numberline {A}Theory}{2}{}
+\contentsline {subsection}{\numberline {B}Relation between $V$, $B$ and $r$}{2}{}
+\contentsline {subsection}{\numberline {C}Procedure}{3}{}
+\contentsline {section}{\numberline {II}Observations}{4}{}
+\contentsline {section}{\numberline {III}Calculations and Characteristics}{5}{}
+\contentsline {subsection}{\numberline {A}Sources of Error}{5}{}
+\contentsline {subsubsection}{\numberline {1}Systematic Errors}{5}{}
+\contentsline {subsubsection}{\numberline {2}Random Errors}{5}{}
+\contentsline {subsection}{\numberline {B}Error Propogation}{5}{}
+\contentsline {section}{\numberline {IV}Calculation}{5}{}
+\contentsline {section}{\numberline {V}Result and Conclusion}{6}{}

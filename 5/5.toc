@@ -1,0 +1,26 @@
+\contentsline {title}{PH3244\\Experiment - 5\\ The Cornus method of determining the elastic constants of a transparent material}{1}{section*.2}%
+\contentsline {abstract}{Synopsis}{1}{section*.1}%
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{section*.3}%
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Theory and Procedure}{3}{section*.4}%
+\contentsline {subsection}{\numberline {A}Theory}{3}{section*.5}%
+\contentsline {subsection}{\numberline {B}Procedure }{4}{section*.9}%
+\contentsline {section}{\numberline {II}Observation}{4}{section*.10}%
+\contentsline {subsubsection}{\numberline {1}Slab parameters and other values}{4}{section*.11}%
+\contentsline {subsubsection}{\numberline {2}Fringe Readings}{5}{section*.12}%
+\contentsline {section}{\numberline {III}Calculations, Analysis and Characteristics}{5}{section*.15}%
+\contentsline {subsection}{\numberline {A}Sources of Error}{5}{section*.16}%
+\contentsline {subsubsection}{\numberline {1}Systematic Errors}{5}{section*.17}%
+\contentsline {subsubsection}{\numberline {2}Random Errors}{5}{section*.18}%
+\contentsline {subsection}{\numberline {B}Error Propogation}{5}{section*.19}%
+\contentsline {subsubsection}{\numberline {1}Calculating error from least count}{5}{section*.20}%
+\contentsline {subsubsection}{\numberline {2}Error propogation for $R_0, Y \text { and } \zeta $}{6}{section*.21}%
+\contentsline {subsubsection}{\numberline {3}Error propogation for $R_1$}{6}{section*.22}%
+\contentsline {subsubsection}{\numberline {4}Error propogation for $R_2$}{7}{section*.23}%
+\contentsline {subsection}{\numberline {C}Plots and Calculation}{7}{section*.24}%
+\contentsline {section}{\numberline {IV}Result and Conclusion}{9}{section*.27}%
+\contentsline {section}{\numberline {}References}{10}{section*.28}%
+\appendix 
+\contentsline {section}{\numberline {A}Theoretical values and Uncertainty}{10}{section*.29}%
+\contentsline {section}{\numberline {B}Imporovments in procedure}{10}{section*.30}%

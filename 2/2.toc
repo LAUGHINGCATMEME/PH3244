@@ -1,0 +1,26 @@
+\contentsline {title}{PH3244\\Experiment - 2\\BJT characteristics \& applications}{1}{}
+\contentsline {abstract}{Synopsis}{1}{}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Theory and Procedure}{2}{}
+\contentsline {subsection}{\numberline {A}Theory}{2}{}
+\contentsline {subsection}{\numberline {B}Procedure}{2}{}
+\contentsline {subsubsection}{\numberline {1}Input Characteristics}{2}{}
+\contentsline {subsubsection}{\numberline {2}Output Characteristics}{2}{}
+\contentsline {subsubsection}{\numberline {3}Phase Shift Ossiclator}{3}{}
+\contentsline {section}{\numberline {II}Observation}{4}{}
+\contentsline {subsection}{\numberline {A}Input Characteristics}{4}{}
+\contentsline {subsection}{\numberline {B}Output Characteristics}{4}{}
+\contentsline {subsection}{\numberline {C}Comments}{5}{}
+\contentsline {section}{\numberline {III}Calculations and Characteristics}{5}{}
+\contentsline {subsection}{\numberline {A}Sources of Error}{5}{}
+\contentsline {subsubsection}{\numberline {1}Systematic Errors}{5}{}
+\contentsline {subsubsection}{\numberline {2}Random Errors}{5}{}
+\contentsline {subsection}{\numberline {B}Error Propogation}{5}{}
+\contentsline {subsection}{\numberline {C}Input Characteristics}{5}{}
+\contentsline {subsection}{\numberline {D}Output Characteristics}{5}{}
+\contentsline {section}{\numberline {IV}Result and Conclusion}{5}{}
+\contentsline {section}{\numberline {}References}{6}{}
+\appendix 
+\contentsline {section}{\numberline {A}Comments on Phase Shift Ossilator}{7}{}

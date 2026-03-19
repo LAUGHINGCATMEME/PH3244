@@ -1,0 +1,23 @@
+\contentsline {title}{PH3244\\Experiment - 3\\ FET Characteristics}{1}{}
+\contentsline {abstract}{Synopsis}{1}{}
+\tocdepth@munge 
+\contentsline {section}{\numberline {}Contents}{1}{}
+\tocdepth@restore 
+\contentsline {section}{\numberline {I}Theory and Procedure}{2}{}
+\contentsline {subsection}{\numberline {A}Theory}{2}{}
+\contentsline {subsection}{\numberline {B}Procedure}{2}{}
+\contentsline {section}{\numberline {II}Observation}{3}{}
+\contentsline {subsection}{\numberline {A}For constant $V_{\text {DS}}$}{3}{}
+\contentsline {subsection}{\numberline {B} For constant $V_{\text {GS}}$}{3}{}
+\contentsline {section}{\numberline {III}Calculations, Analysis and Characteristics}{3}{}
+\contentsline {subsection}{\numberline {A}Sources of Error}{3}{}
+\contentsline {subsubsection}{\numberline {1}Systematic Errors}{3}{}
+\contentsline {subsubsection}{\numberline {2}Random Errors}{4}{}
+\contentsline {subsection}{\numberline {B}Error Propogation}{4}{}
+\contentsline {subsection}{\numberline {C}Plots and Calculation}{4}{}
+\contentsline {section}{\numberline {IV}Result and Conclusion}{5}{}
+\appendix 
+\contentsline {section}{\numberline {A}Checking the observed values with theoratical}{5}{}
+\contentsline {section}{\numberline {B}Comments on how to improve the experiment}{5}{}
+\contentsline {section}{\numberline {C}Why the first dataset was discarded}{5}{}
+\contentsline {section}{\numberline {}References}{6}{}

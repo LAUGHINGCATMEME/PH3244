@@ -1,0 +1,311 @@
+\documentclass[%
+sor,
+ jor,
+ amsmath,amssymb,
+ reprint,
+]{revtex4-2}
+
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{circuitikz}
+
+\begin{document}
+\title{PH3244\\Experiment - 4\\ Ratio of e/m}
+\author{Aumshree P. Shah\\20231059}
+\altaffiliation{\color{red}aumshree.pinkalbenshah@students.iiserpune.ac.in}
+\date{\today}
+\begin{abstract}
+\centering
+In this experiment we try to measure the electron weight by mass ratio (value of e/m).
+\end{abstract}
+\maketitle
+\tableofcontents
+\vspace*{\fill}
+\pagebreak
+
+\section{Theory and Procedure}
+\subsection{Theory}
+
+Our arrangement for measuring e/m, the charge to mass ratio of the electron, is a very simple set-up. It is based on Thomson's method. The e/m-tube is bulb-like and contains a filament, a cathode, a grid, a pair of deflection plates and an anode. The filament heats the cathode which emits electrons. The electrons are accelerated through a known potential applied between the cathode and the anode. The grid and the anode have a hole through which electrons can pass. The tube is filled with helium at a very low pressure. Some of the electrons emitted by the cathode collide with helium atoms which get excited and radiate visible light. The electron beam thus leaves a visible track in the tube and all manipulations on it can be seen. The tube is placed between a pair of fixed Helmholtz coils which produce a uniform and known magnetic field. The socket of the tube can be rotated so that the electron beam is at right angles to the magnetic field. The beam is deflected in a circular path of radius $r$ depending on the accelerating potential $V$, the magnetic field $B$ and the charge to mass ratio e/m. This circular path is visible and the diameter $d$ can be measured and e/m obtained from the relation
+
+\[
+e/m = 8V / B^2 d^2.
+\]
+
+This set-up can also be used to study the electron beam deflection for different directions of the magnetic field by varying the orientation of the e/m-tube.
+
+The deflecting plates play no role in the experiment. They are interesting for a visual observation of how the electron beam gets deflected when a potential difference is applied between the deflecting plates.
+
+\begin{center}
+%\includegraphics[width=0.55\textwidth]{img-0.jpeg} \\
+Fig. 1: e/m Experiment, EMX-01
+\end{center}
+
+\subsection{Relation between $V$, $B$ and $r$}
+
+When the electrons are accelerated through the potential $V$, they gain kinetic energy equal to their charge times the accelerating potential. Therefore $eV = m v^{2} / 2$. The final (non-relativistic) velocity of the electrons is therefore
+
+\begin{equation}
+v = \left(2 e V / m\right) ^ {1 / 2}
+\tag{1}
+\end{equation}
+
+When these electrons pass through a region having a magnetic field $B$, they are acted upon by a force, called the Lorentz force, given by $e\vec{v} \times \vec{B}$. If the electrons are initially moving along $x$-axis and the magnetic field is along $z$-axis, the electrons describe a circular path in the $xy$-plane with the centripetal force balancing the Lorentz force,
+
+\[
+e v B = m v ^ {2} / r
+\]
+\[
+\text {or} \quad v = e B r / m \tag {2}
+\]
+
+Eliminating $v$ between Eqs.(1) and (2), we get
+
+\[
+e B r / m = \left(2 e V / m\right) ^ {1 / 2}
+\]
+\[
+\text {or} \quad e / m = 2 V / B ^ {2} r ^ {2} = 8 V / B ^ {2} d ^ {2} \tag {3}
+\]
+
+where $d$ is diameter of the circular path. This result assumes that the magnetic field $B$ is uniform. This in the apparatus is produced by a pair of Helmholtz coils (separated by a distance equal to their radius). If $n$ is number of turns in a coil and $a$ its radius, then the magnetic field $B$, midway between the coils is given by
+
+$$B = 2 \times \frac{\mu_0 I n }{2(5/4)^{3/2}a} = 2 \times \left( \frac{2\pi I n}{(5/4)^{3/2}a} \times 10^{-7} \right)$$
+
+when a current of $I$ amp is flowing in the coils. $\mu_0$ is permeability of free space and is given by $\mu_0 = 4\pi \times 10^{-7} \, \mathrm{N / A^2}$. This field is uniform in the region where the electrons move. Putting the value of $B$ in Eq.(3), we get
+
+\begin{equation}
+\frac {e}{m} = \left(\frac {1 2 5 a ^ {2}}{1 2 8 \pi^ {2} n ^ {2}} \times 1 0 ^ {1 4}\right) \frac {V}{I ^ {2} d ^ {2}}
+\tag{4}
+\end{equation}
+
+The coils in thsi apparatus have 160 turns each and their radii are 0.14 m. using this values 
+
+\begin{equation}
+	\boxed{	\frac e m = (7.576 \times  10^6) \frac {V (\si{\volt})} {I^2 (\si{\ampere}^2) d^2 (\si{\meter}^2)} \si{\coulomb \per \kilogram}}
+\tag{5}
+\end{equation}
+
+
+
+\subsection{Procedure}
+
+\begin{enumerate}
+\item Before the power is switched to ‘ON’, make sure all the control knobs are at their minimum position.
+
+\item Turn the power switch to ‘ON’. The indicator lamp will glow.
+
+\item Wait a little for the cathode to heat up.
+
+\item Turn the accelerator voltage adjust knob clockwise to increase the voltage. Rectilinear electron beam emerging from the cathode will be visible. Adjust the accelerator voltage at about 200 volt.
+
+\item It should be clear that the electrons themselves in the beam are not visible. What is observed is the glow of the helium gas in the tube when the electrons collide with the atoms of the gas. We actually see the glow of gas atoms which have been excited by collisions with electrons.
+
+\item Rotate the e/m - tube so that the electron beam is parallel to the plane of the Helmholtz coils. \textit{Do not take it out of its socket.}
+
+\item Earth's magnetic field interferes with the measurements. However this magnetic field is weak compared to the field generated by the Helmholtz coils and we could ignore its effect as a first approximation.
+
+\item Slowly turn the current adjust knob clockwise to increase the current for the Helmholtz coils. The electron beam will get curved. Increasing the current will increase the curvature of the beam.
+
+\item In case the electron beam does not make a complete (closed) circle and the circular path is skewed, rotate the socket of the tube until the path is a closed circle. This happens when the tube pointer is set at about 90$^\circ$.
+
+\item Measure the diameter of the electron beam. This measurement has been facilitated by fixing a hollow tube (fitted with cross wires at its both ends) on the slider of the scale. This tube fixes the line of sight during measurements.
+
+\item Note the ammeter reading for the current to the Helmholtz coils and the voltmeter reading for the accelerating voltage.
+
+\item Decrease the accelerating voltage by a small amount (20 volt, say) and measure the diameter of the electron beam path.
+
+\item Carry on the observations. The voltmeter reading should not be increased beyond 250 volt. A value lower than 80 volt is also not advisable. Similarly the current to the Helmholtz coils should not be more than 2 amp.
+
+\end{enumerate}
+
+
+\section{Observations}
+
+\begin{enumerate}
+	\item least count of current: 0.1 A 
+	\item least count of voltage: 10 V
+	\item least count of scale: 0.1 mm 
+	\item total coil turns: 160
+	\item coil radii: 0.14 m
+\end{enumerate}
+
+
+
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1.3 Amp, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & lhs (cm) & rhs (cm) \\
+\hline
+200 & 5.6 & 13.6 \\
+180 & 5.9 & 13.5 \\
+150 & 6.4 & 13.4 \\
+120 & 7.3 & 13.6 \\
+100 & 7.0 & 12.8 \\
+\hline
+\end{tabular}
+\end{minipage}%
+\hspace{0.01\linewidth}%
+\vrule width 0.6pt
+\hspace{0.01\linewidth}%
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{V = 100 V, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Current (A) & lhs (cm) & rhs (cm) \\
+\hline
+0.7 & 5.5 & 15.2 \\
+0.9 & 6.5 & 14.4 \\
+1.0 & 6.7 & 14.0 \\
+1.2 & 7.4 & 13.5 \\
+1.4 & 7.8 & 13.1 \\
+1.6 & 8.1 & 12.8 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at chord no leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 14.8 & 4.5 \\
+180 & 14.5 & 4.7 \\
+150 & 14.2 & 5.1 \\
+100 & 13.9 & 6.8 \\
+\hline
+\end{tabular}
+\end{minipage}%
+\hspace{0.01\linewidth}%
+\vrule width 0.6pt
+\hspace{0.01\linewidth}%
+\begin{minipage}[t]{0.48\linewidth}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at diameter no leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 15.3 & 4.3 \\
+180 & 14.4 & 4.7 \\
+150 & 14.1 & 5.35 \\
+120 & 13.9 & 5.8 \\
+100 & 14.0 & 6.9 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\begin{center}
+\centering
+\captionof{table}{I = 1 Amp, cross hair at diameter with leveling}
+\begin{tabular}{|c|c|c|}
+\hline
+Voltage (V) & rhs (cm) & lhs (cm) \\
+\hline
+200 & 14.7 & 4.5 \\
+180 & 14.4 & 4.9 \\
+150 & 14.5 & 5.9 \\
+120 & 14.6 & 6.6 \\
+100 & 14.3 & 7.2 \\
+\hline
+\end{tabular}
+\centering
+\\
+\vspace{1cm}
+Data taken on 11 Feb 2026
+\end{center}
+
+
+
+
+\subsection{Comments}
+
+\section{Calculations and Characteristics}
+\subsection{Sources of Error}
+\subsubsection{Systematic Errors}
+\begin{enumerate}
+	\item The circular beam being not exactaly perpendicular to the magnetic feild.
+	\item Different magnetic feild than the theroratical prodiuced by the coils.
+\end{enumerate}
+
+\subsubsection{Random Errors}
+\begin{enumerate}
+	\item Uncertanity of the instruments.
+	\item Width of the beam.
+	\item Parallex and Human error while alining the crosshair.
+\end{enumerate}
+\subsection{Error Propogation}
+To calculate the standard deviation from values we have measured with some least count, we use the formula [2]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{12}}
+\end{equation}
+and to calculate the standard deviation for values we have applied to the instrument with some least count, we use the formula [2]: 
+\begin{equation}
+\sigma = \frac{\text{Least Count}}{\sqrt{24}}
+\end{equation}
+\section{Calculation}
+We assume the systematic error to be negligible, we will only make use of Table - III, IV and V to calculate the e/m value as we need to account for the random errors. \\
+We use the formula for error propogation as described in the previous section and do a $y = mx$ fit for the slope of $V$ vs $d^2$ as follows:
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Mean diameter (cm) & $\sigma_{\text{least}}$ (cm) & $\sigma_{\text{meas}}$ (cm) & $\sigma$ (cm) & $D^2$ (cm$^2$) & $\sigma_{D^2}$ (cm$^2$) \\
+\hline
+10.5  & 0.04 & 0.44& 0.4  & 110   & 9   \\
+9.67  & 0.04 & 0.15& 0.16 & 93    & 3   \\
+8.82  & 0.04 & 0.26& 0.26 & 78    & 5   \\
+8.05  & 0.04 & 0.07& 0.08 & 64.8  & 1.3 \\
+7.10  & 0.04 & 0               & 0.04 & 50.4  & 0.6 \\
+\hline
+\end{tabular}
+\caption{Calcuation of diameter by rhs-lhs and the error propogation}
+\end{table}
+
+Plotting this we get:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{lmfao}
+\caption{Plot of $V$ vs $d^2$}
+\end{figure}
+This has a slope of -- hence putting this in Eq- 5 as 
+$$\frac e m = 7.576 \times  10^6 * k $$
+where $k$ is the slope we get the ratio of e/m as 
+
+\section{Result and Conclusion}
+From this we get the value of $e/m$ as -- with 95\% confidence.
+\vspace{1cm}
+\hrule
+\vspace{3cm}
+\nocite{*}
+%\begin{thebibliography}{9}
+%
+%\bibitem{ph3244_repo}
+%LaughingCatMeme,
+%\textit{PH3244 Lab Code Repository},
+%GitHub repository,
+%\url{https://github.com/LAUGHINGCATMEME/PH3244}
+%(accessed: 14 Feb 2026).
+%
+%\bibitem{tewari_uncertainty}
+%G.~M.~Tewari,
+%\textit{Measurement Uncertainty},
+%NABL Assessor Workshop Material,
+%\url{https://www.ilsi-india.org/International_Workshop_and_Training_Program_on_Good_Food_Laboratory_Practices/Measurement%20Uncertainty%20by%20Dr.%20G%20M%20Tewari,%20NABL%20Assessor.pdf}
+%(accessed: 14 Feb 2026).
+%
+%\end{thebibliography}
+
+\end{document}
