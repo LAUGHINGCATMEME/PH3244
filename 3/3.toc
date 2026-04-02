@@ -19,5 +19,5 @@
 \appendix 
 \contentsline {section}{\numberline {A}Checking the observed values with theoratical}{5}{}
 \contentsline {section}{\numberline {B}Comments on how to improve the experiment}{5}{}
-\contentsline {section}{\numberline {C}Why the first dataset was discarded}{5}{}
+\contentsline {section}{\numberline {C}Why the first dataset was discarded}{6}{}
 \contentsline {section}{\numberline {}References}{6}{}
