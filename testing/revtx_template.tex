@@ -4,13 +4,17 @@ sor,
  amsmath,amssymb,
  reprint,
 ]{revtex4-2}
+
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{float}
 \usepackage{caption}
-\usepackage{amsmath, amssymb, amsfonts}
-\usepackage{siunitx}
-\usepackage{graphicx}
 \usepackage{circuitikz}
+\usepackage{url}
+\usepackage{hyperref}
 
 \begin{document}
 \title{PH3244\\Experiment - \\ NAME}
@@ -26,6 +30,10 @@ make sure that teh 1 ref is github, 2 is error pro and 3rd is the error proopoga
 \tableofcontents
 \vspace*{\fill}
 \pagebreak
+
+
+
+
 \section{Theory and Procedure}
 \subsection{Theory}
 theory
@@ -72,12 +80,13 @@ for 95 percent 1.96
 \hat{p}_{t} = \underset{(1.958)}{0.900}+\underset{(0.017)}{0.997}p_{t-1},
 \end{equation}
 \vspace{1cm}
-\hrule
-\nocite{*}
-\bibliographystyle{apsrev4-2}
-\bibliography{2}
-\appendix
 
+\vspace{1cm}
+\hrule
+\vspace{3cm}
+\nocite{*}
+
+\appendix
 \section{Comments}
 
 \end{document}
