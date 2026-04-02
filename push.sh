@@ -25,22 +25,17 @@ echo "=== Cleaning extra files (excluding .git) ==="
 
 # Delete everything NOT in allowed extensions, excluding .git directory
 find . -type f \
-    -not -path "./.git/*" \
-    ! \( \
-    -name "*.pdf" -o \
-    -name "*.py" -o \
-    -name "*.md" -o \
-    -name "*.jpg" -o \
-    -name "*.tex" -o \
-    -name "*.bib" -o \
-    -name "*.png" -o \
-    -name "*.txt" -o \
-  -name "*.xlsx" -o \
-  -name "*.csv" -o \
-    -name "*.jpeg" -o \
-    -name "*.sh" \
-    \) \
-    -print -delete
+  -not -path "./.git/*" \
+  \( \
+    -name "*.aux" -o \
+    -name "*.bbl" -o \
+    -name "*.blg" -o \
+    -name "*.fdb*" -o \
+    -name "*.fls" -o \
+    -name "*.log" -o \
+    -name "*.toc" \
+  \) \
+  -print -delete
 
 echo "=== Staging files ==="
 
